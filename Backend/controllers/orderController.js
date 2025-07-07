@@ -39,7 +39,7 @@ const addOrder = asyncHandler(async (req, res) => {
        return  createResponse(res, 403, "Not Availble to this quantity", [], false); 
   }    
    product.quantityAvailable-=quantity; // update the product availblity..
-   awit product.save(); // save the updates...
+   await product.save(); // save the updates...
 
   const order = await Order.create({
     product,

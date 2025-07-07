@@ -6,14 +6,20 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
 const signup = asyncHandler(async (req, res) => {
-  const { name, username, email, password, city, category } = req.body;
+  const { name, username, email, password, city, category } = req.body; 
 
   if (await User.findOne({ email })) {
     return createResponse(res, 400, "Email already exists");
   }
   if (await User.findOne({ username })) {
     return createResponse(res, 400, "Username already exists");
-  }
+  }  
+
+  const validCategories = ["Buyer", "Seller", "DeliveryAdmin", "Middleman"];
+if (!validCategories.includes(req.body.category)) {
+  return res.status(400).json({ message: "Invalid user category" });
+}
+   
 
   const hashedPassword = await bcrypt.hash(password, 10);
 
