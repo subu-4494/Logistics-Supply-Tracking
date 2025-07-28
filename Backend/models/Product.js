@@ -9,6 +9,7 @@ const productSchema = new mongoose.Schema(
     seller: { type: String },
     deliveryAdmin: { type: String },
     status: { type: String, default: "available" },
+    quantityAvailable: { type: Number, required: true, default: 1 } // ✅ added field
   },
   { timestamps: true }
 );

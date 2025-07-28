@@ -1,2 +1,26 @@
 2025-07-01T11:58:01.447Z error: MongoDB Connection Error: querySrv ENOTFOUND _mongodb._tcp.123564
 2025-07-01T12:03:39.460Z error: MongoDB Connection Error: bad auth : authentication failed
+2025-07-04T10:57:04.230Z error: Error: Must supply api_key
+    at ensureOption (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\utils\ensureOption.js:19:13)
+    at Object.sign_request (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\utils\index.js:1151:16)
+    at Object.process_request_params (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\utils\index.js:1203:22)
+    at call_api (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\uploader.js:474:18)
+    at Object.upload (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\uploader.js:53:10)
+    at Object.upload_stream (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\uploader.js:40:18)
+    at Object.upload_stream (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\utils\index.js:1400:21)
+    at uploadResponse (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\controllers\productController.js:23:50)
+    at new Promise (<anonymous>)
+    at C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\controllers\productController.js:22:36
+2025-07-19T20:15:21.340Z error: Product ID and quantity are required
+2025-07-19T20:15:56.526Z error: Product ID and quantity are required
+2025-07-27T05:24:12.722Z error: Product ID and quantity are required
+2025-07-27T05:26:45.935Z error: Product ID and quantity are required
+2025-07-28T13:31:23.784Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:33:56.746Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:35:56.637Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:42:45.808Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:58:17.141Z error: Order does note exists in the delivery admin's queue
+2025-07-28T14:02:07.353Z error: Product ID and quantity are required
+2025-07-28T18:18:42.023Z error: Only delivery Admin can add track
+2025-07-28T18:56:21.155Z error: Current owner not found or is the last owner in the track
+2025-07-28T19:09:49.084Z error: Current owner not found or is the last owner in the track

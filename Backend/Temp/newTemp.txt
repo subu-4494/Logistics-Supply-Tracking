@@ -1,0 +1,1 @@
+[{"owner":"6884c0976d02d1cd26b2fd49","recieve_status":true,"give_status":true},{"owner":"68877617b229f24a003b80ee","recieve_status":true,"give_status":false},{"owner":"68877723b229f24a003b80f3","recieve_status":false,"give_status":false},{"owner":"6884d9d37d8c58a44b9143a7","recieve_status":false,"give_status":true}]

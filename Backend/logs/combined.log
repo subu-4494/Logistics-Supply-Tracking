@@ -34,3 +34,1427 @@
 2025-07-01T12:42:26.407Z info: GET /auth/logout 200 0.323 ms
 2025-07-01T12:42:41.555Z info: GET /auth/logout 200 0.238 ms
 2025-07-01T12:42:44.091Z info: GET /auth/logout 200 0.226 ms
+2025-07-03T11:28:38.696Z info: Request to authRoutes has entered
+2025-07-03T11:28:38.698Z info: Request to authRoutes has exited
+2025-07-03T11:28:38.807Z info: Request to productRoutes.js has entered
+2025-07-03T11:28:38.808Z info: Request to productRoutes.js has exited
+2025-07-03T11:28:38.813Z info: Server running on http://localhost:5002
+2025-07-03T11:28:40.361Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-03T11:36:05.249Z info: POST /auth/signup 500 454.017 ms
+2025-07-03T11:37:06.546Z info: POST /auth/signup 201 418.524 ms
+2025-07-03T11:38:26.096Z info: GET /auth/login 404 7.811 ms
+2025-07-03T11:38:30.892Z info: POST /auth/login 200 161.568 ms
+2025-07-03T11:49:20.049Z info: Request to authMiddleware.authorize has entered
+2025-07-03T11:49:20.050Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA"}
+2025-07-03T11:49:20.052Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA
+2025-07-03T11:49:20.063Z info: Token is verified
+2025-07-03T11:49:20.064Z info: decoded: {"id":"68666b62f59a62e2557402a1","iat":1751542710,"exp":1751546310}
+2025-07-03T11:49:20.234Z info: Request to authMiddleware.authorize has exited
+2025-07-03T11:49:20.243Z info: Request to productController.addProduct has entered
+2025-07-03T11:49:20.245Z info: POST /product/addProduct 403 197.191 ms
+2025-07-03T11:53:06.631Z info: POST /auth/signup 201 432.013 ms
+2025-07-03T11:54:53.668Z info: Request to authMiddleware.authorize has entered
+2025-07-03T11:54:53.669Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA"}
+2025-07-03T11:54:53.669Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA
+2025-07-03T11:54:53.673Z info: Token is verified
+2025-07-03T11:54:53.673Z info: decoded: {"id":"68666b62f59a62e2557402a1","iat":1751542710,"exp":1751546310}
+2025-07-03T11:54:53.753Z info: Request to authMiddleware.authorize has exited
+2025-07-03T11:54:53.755Z info: Request to productController.addProduct has entered
+2025-07-03T11:54:53.757Z info: POST /product/addproduct 403 88.898 ms
+2025-07-03T11:55:19.136Z info: Request to authMiddleware.authorize has entered
+2025-07-03T11:55:19.138Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA"}
+2025-07-03T11:55:19.139Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA
+2025-07-03T11:55:19.142Z info: Token is verified
+2025-07-03T11:55:19.145Z info: decoded: {"id":"68666b62f59a62e2557402a1","iat":1751542710,"exp":1751546310}
+2025-07-03T11:55:19.249Z info: Request to authMiddleware.authorize has exited
+2025-07-03T11:55:19.250Z info: Request to productController.addProduct has entered
+2025-07-03T11:55:19.258Z info: POST /product/addProduct 403 121.310 ms
+2025-07-03T11:56:58.208Z info: Request to authMiddleware.authorize has entered
+2025-07-03T11:56:58.211Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA"}
+2025-07-03T11:56:58.211Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA
+2025-07-03T11:56:58.214Z info: Token is verified
+2025-07-03T11:56:58.216Z info: decoded: {"id":"68666b62f59a62e2557402a1","iat":1751542710,"exp":1751546310}
+2025-07-03T11:56:58.276Z info: Request to authMiddleware.authorize has exited
+2025-07-03T11:56:58.278Z info: Request to productController.addProduct has entered
+2025-07-03T11:56:58.279Z info: POST /product/addProduct 403 70.441 ms
+2025-07-03T12:01:11.029Z info: Request to authMiddleware.authorize has entered
+2025-07-03T12:01:11.030Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA"}
+2025-07-03T12:01:11.032Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA
+2025-07-03T12:01:11.035Z info: Token is verified
+2025-07-03T12:01:11.036Z info: decoded: {"id":"68666b62f59a62e2557402a1","iat":1751542710,"exp":1751546310}
+2025-07-03T12:01:11.102Z info: Request to authMiddleware.authorize has exited
+2025-07-03T12:01:11.103Z info: Request to productController.addProduct has entered
+2025-07-03T12:01:11.105Z info: POST /product/addProduct 403 74.754 ms
+2025-07-03T12:06:00.704Z info: Request to authRoutes has entered
+2025-07-03T12:06:00.717Z info: Request to authRoutes has exited
+2025-07-03T12:06:00.959Z info: Request to productRoutes.js has entered
+2025-07-03T12:06:00.960Z info: Request to productRoutes.js has exited
+2025-07-03T12:06:00.964Z info: Server running on http://localhost:5002
+2025-07-03T12:06:02.432Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-03T12:06:14.297Z info: Request to authMiddleware.authorize has entered
+2025-07-03T12:06:14.298Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA"}
+2025-07-03T12:06:14.299Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2YjYyZjU5YTYyZTI1NTc0MDJhMSIsImlhdCI6MTc1MTU0MjcxMCwiZXhwIjoxNzUxNTQ2MzEwfQ.az_opV6DDAbfmroO5WWh8Vp_TANb-_RwYmzA1m3m9xA
+2025-07-03T12:06:14.302Z info: Token is verified
+2025-07-03T12:06:14.303Z info: decoded: {"id":"68666b62f59a62e2557402a1","iat":1751542710,"exp":1751546310}
+2025-07-03T12:06:14.423Z info: Request to authMiddleware.authorize has exited
+2025-07-03T12:06:14.426Z info: Request to productController.addProduct has entered
+2025-07-03T12:06:14.428Z info: User category: seller
+2025-07-03T12:06:14.439Z info: POST /product/addProduct 403 137.135 ms
+2025-07-03T12:09:33.183Z info: POST /auth/login 200 322.693 ms
+2025-07-03T12:10:08.169Z info: Request to authMiddleware.authorize has entered
+2025-07-03T12:10:08.169Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NDU3MywiZXhwIjoxNzUxNTQ4MTczfQ.g45A9EjPhDw-EmIIzNV4Vp83I412IdB-zxl6hNBozsk"}
+2025-07-03T12:10:08.170Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NDU3MywiZXhwIjoxNzUxNTQ4MTczfQ.g45A9EjPhDw-EmIIzNV4Vp83I412IdB-zxl6hNBozsk
+2025-07-03T12:10:08.173Z info: Token is verified
+2025-07-03T12:10:08.173Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751544573,"exp":1751548173}
+2025-07-03T12:10:08.297Z info: Request to authMiddleware.authorize has exited
+2025-07-03T12:10:08.298Z info: Request to productController.addProduct has entered
+2025-07-03T12:10:08.299Z info: User category: Seller
+2025-07-03T12:10:08.503Z info: POST /product/addProduct 201 334.388 ms
+2025-07-03T12:11:33.497Z info: POST /auth/signup 201 361.565 ms
+2025-07-03T12:18:27.471Z info: Request to authMiddleware.authorize has entered
+2025-07-03T12:18:27.472Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NDU3MywiZXhwIjoxNzUxNTQ4MTczfQ.g45A9EjPhDw-EmIIzNV4Vp83I412IdB-zxl6hNBozsk"}
+2025-07-03T12:18:27.473Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NDU3MywiZXhwIjoxNzUxNTQ4MTczfQ.g45A9EjPhDw-EmIIzNV4Vp83I412IdB-zxl6hNBozsk
+2025-07-03T12:18:27.475Z info: Token is verified
+2025-07-03T12:18:27.476Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751544573,"exp":1751548173}
+2025-07-03T12:18:27.531Z info: Request to authMiddleware.authorize has exited
+2025-07-03T12:18:27.532Z info: Request to productController.addProduct has entered
+2025-07-03T12:18:27.533Z info: User category: Seller
+2025-07-03T12:18:27.700Z info: POST /product/addProduct 201 227.440 ms
+2025-07-03T12:22:37.567Z info: POST /auth/login 500 124.253 ms
+2025-07-03T12:23:46.127Z info: POST /auth/login 400 306.276 ms
+2025-07-03T12:24:25.374Z info: POST /auth/login 200 168.571 ms
+2025-07-03T12:24:48.206Z info: POST /product/getProduct 404 1.145 ms
+2025-07-03T12:25:22.691Z info: GET /product/getProduct 404 0.420 ms
+2025-07-03T12:26:11.401Z info: Request to authMiddleware.authorize has entered
+2025-07-03T12:26:11.403Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NTQ2NSwiZXhwIjoxNzUxNTQ5MDY1fQ.6O-JeqoSntHWEjT6Cyb1TZt54OmC7wOCrdQu-78dr9g"}
+2025-07-03T12:26:11.404Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NTQ2NSwiZXhwIjoxNzUxNTQ5MDY1fQ.6O-JeqoSntHWEjT6Cyb1TZt54OmC7wOCrdQu-78dr9g
+2025-07-03T12:26:11.407Z info: Token is verified
+2025-07-03T12:26:11.409Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751545465,"exp":1751549065}
+2025-07-03T12:26:11.477Z info: Request to authMiddleware.authorize has exited
+2025-07-03T12:26:11.479Z info: Request to productController.getProducts has entered
+2025-07-03T12:26:11.547Z info: Fetched seller's products
+2025-07-03T12:26:11.548Z info: Products fetched successfully
+2025-07-03T12:26:11.550Z info: GET /product//getProducts 200 147.961 ms
+2025-07-03T12:30:59.516Z info: Request to authRoutes has entered
+2025-07-03T12:30:59.519Z info: Request to authRoutes has exited
+2025-07-03T12:30:59.704Z info: Request to productRoutes.js has entered
+2025-07-03T12:30:59.706Z info: Request to productRoutes.js has exited
+2025-07-03T12:30:59.712Z info: Server running on http://localhost:5002
+2025-07-03T12:31:00.975Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-03T12:31:07.002Z info: Request to authMiddleware.authorize has entered
+2025-07-03T12:31:07.003Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NTQ2NSwiZXhwIjoxNzUxNTQ5MDY1fQ.6O-JeqoSntHWEjT6Cyb1TZt54OmC7wOCrdQu-78dr9g"}
+2025-07-03T12:31:07.003Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NTQ2NSwiZXhwIjoxNzUxNTQ5MDY1fQ.6O-JeqoSntHWEjT6Cyb1TZt54OmC7wOCrdQu-78dr9g
+2025-07-03T12:31:07.008Z info: Token is verified
+2025-07-03T12:31:07.009Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751545465,"exp":1751549065}
+2025-07-03T12:31:07.089Z info: Request to authMiddleware.authorize has exited
+2025-07-03T12:31:07.091Z info: Request to productController.getProducts has entered
+2025-07-03T12:31:07.093Z info: Logged-in user info: {"_id":"68666f22f59a62e2557402a7","name":"Amrita Singh","username":"Amii@123","email":"amrita1@gmail.com","password":"$2b$10$SzDkwP30THLXJx6bfJ16BO7UiJS08LCdDDgqjKl8gh5Zcstsr1Ug2","city":"Prayagraj","category":"Seller","createdAt":"2025-07-03T11:53:06.545Z","updatedAt":"2025-07-03T11:53:06.545Z","__v":0}
+2025-07-03T12:31:07.217Z info: Fetched seller's products
+2025-07-03T12:31:07.218Z info: Products fetched successfully
+2025-07-03T12:31:07.224Z info: GET /product//getProducts 200 220.059 ms
+2025-07-03T12:36:16.836Z info: GET /auth/login 404 5.374 ms
+2025-07-03T12:36:27.503Z info: POST /auth/login 400 322.257 ms
+2025-07-03T12:37:54.185Z info: POST /auth/signup 201 429.595 ms
+2025-07-03T12:38:45.795Z info: Request to authMiddleware.authorize has entered
+2025-07-03T12:38:45.796Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NTQ2NSwiZXhwIjoxNzUxNTQ5MDY1fQ.6O-JeqoSntHWEjT6Cyb1TZt54OmC7wOCrdQu-78dr9g"}
+2025-07-03T12:38:45.796Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NTQ2NSwiZXhwIjoxNzUxNTQ5MDY1fQ.6O-JeqoSntHWEjT6Cyb1TZt54OmC7wOCrdQu-78dr9g
+2025-07-03T12:38:45.822Z info: Token is verified
+2025-07-03T12:38:45.824Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751545465,"exp":1751549065}
+2025-07-03T12:38:45.906Z info: Request to authMiddleware.authorize has exited
+2025-07-03T12:38:45.908Z info: Request to productController.addProduct has entered
+2025-07-03T12:38:45.908Z info: User category: Seller
+2025-07-03T12:38:46.076Z info: POST /product/addProduct 201 280.628 ms
+2025-07-03T12:39:04.215Z info: Request to authMiddleware.authorize has entered
+2025-07-03T12:39:04.217Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NTQ2NSwiZXhwIjoxNzUxNTQ5MDY1fQ.6O-JeqoSntHWEjT6Cyb1TZt54OmC7wOCrdQu-78dr9g"}
+2025-07-03T12:39:04.218Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTU0NTQ2NSwiZXhwIjoxNzUxNTQ5MDY1fQ.6O-JeqoSntHWEjT6Cyb1TZt54OmC7wOCrdQu-78dr9g
+2025-07-03T12:39:04.222Z info: Token is verified
+2025-07-03T12:39:04.222Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751545465,"exp":1751549065}
+2025-07-03T12:39:04.281Z info: Request to authMiddleware.authorize has exited
+2025-07-03T12:39:04.282Z info: Request to productController.getProducts has entered
+2025-07-03T12:39:04.283Z info: Logged-in user info: {"_id":"68666f22f59a62e2557402a7","name":"Amrita Singh","username":"Amii@123","email":"amrita1@gmail.com","password":"$2b$10$SzDkwP30THLXJx6bfJ16BO7UiJS08LCdDDgqjKl8gh5Zcstsr1Ug2","city":"Prayagraj","category":"Seller","createdAt":"2025-07-03T11:53:06.545Z","updatedAt":"2025-07-03T11:53:06.545Z","__v":0}
+2025-07-03T12:39:04.342Z info: Fetched seller's products
+2025-07-03T12:39:04.342Z info: Products fetched successfully
+2025-07-03T12:39:04.346Z info: GET /product/getProducts 200 130.883 ms
+2025-07-03T12:58:51.705Z info: POST /auth/signup 201 375.489 ms
+2025-07-03T13:05:52.640Z info: POST /auth/login 200 267.045 ms
+2025-07-03T13:06:44.661Z info: Request to authMiddleware.authorize has entered
+2025-07-03T13:06:44.662Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY3ZThiNmUyMjE4NGI3MmI4YzQwZSIsImlhdCI6MTc1MTU0Nzk1MiwiZXhwIjoxNzUxNTUxNTUyfQ.DGlI44WaNEwXqjaF2K8KnkyJ0xvH7oiNrpcAI-B5rIs"}
+2025-07-03T13:06:44.663Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY3ZThiNmUyMjE4NGI3MmI4YzQwZSIsImlhdCI6MTc1MTU0Nzk1MiwiZXhwIjoxNzUxNTUxNTUyfQ.DGlI44WaNEwXqjaF2K8KnkyJ0xvH7oiNrpcAI-B5rIs
+2025-07-03T13:06:44.675Z info: Token is verified
+2025-07-03T13:06:44.676Z info: decoded: {"id":"68667e8b6e22184b72b8c40e","iat":1751547952,"exp":1751551552}
+2025-07-03T13:06:44.738Z info: Request to authMiddleware.authorize has exited
+2025-07-03T13:06:44.741Z info: Request to productController.addProduct has entered
+2025-07-03T13:06:44.741Z info: User category: Seller
+2025-07-03T13:06:44.818Z info: POST /product/addProduct 201 157.289 ms
+2025-07-03T13:07:01.071Z info: Request to authMiddleware.authorize has entered
+2025-07-03T13:07:01.072Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY3ZThiNmUyMjE4NGI3MmI4YzQwZSIsImlhdCI6MTc1MTU0Nzk1MiwiZXhwIjoxNzUxNTUxNTUyfQ.DGlI44WaNEwXqjaF2K8KnkyJ0xvH7oiNrpcAI-B5rIs"}
+2025-07-03T13:07:01.072Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY3ZThiNmUyMjE4NGI3MmI4YzQwZSIsImlhdCI6MTc1MTU0Nzk1MiwiZXhwIjoxNzUxNTUxNTUyfQ.DGlI44WaNEwXqjaF2K8KnkyJ0xvH7oiNrpcAI-B5rIs
+2025-07-03T13:07:01.074Z info: Token is verified
+2025-07-03T13:07:01.074Z info: decoded: {"id":"68667e8b6e22184b72b8c40e","iat":1751547952,"exp":1751551552}
+2025-07-03T13:07:01.120Z info: Request to authMiddleware.authorize has exited
+2025-07-03T13:07:01.121Z info: Request to productController.getProducts has entered
+2025-07-03T13:07:01.122Z info: Logged-in user info: {"_id":"68667e8b6e22184b72b8c40e","name":"subu","username":"subu@123","email":"subu@gmail.com","password":"$2b$10$rAULF6d5WiHpBW9WHlAm3e8K1EMmGy6A2hF5U5DrOtaxPir.yuDIq","city":"Prayagraj","category":"Seller","createdAt":"2025-07-03T12:58:51.606Z","updatedAt":"2025-07-03T12:58:51.606Z","__v":0}
+2025-07-03T13:07:01.179Z info: Fetched seller's products
+2025-07-03T13:07:01.179Z info: Products fetched successfully
+2025-07-03T13:07:01.182Z info: GET /product/getProducts 200 110.745 ms
+2025-07-03T13:08:15.219Z info: POST /auth/signup 201 338.772 ms
+2025-07-03T13:08:27.492Z info: POST /auth/login 200 179.889 ms
+2025-07-03T13:08:47.777Z info: Request to authMiddleware.authorize has entered
+2025-07-03T13:08:47.777Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY4MGJmNmUyMjE4NGI3MmI4YzQxOCIsImlhdCI6MTc1MTU0ODEwNywiZXhwIjoxNzUxNTUxNzA3fQ.p0aLOeQdvnL4i5QQJxV2k8EAlJ9dbOMf0FPNO5zpMaw"}
+2025-07-03T13:08:47.777Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY4MGJmNmUyMjE4NGI3MmI4YzQxOCIsImlhdCI6MTc1MTU0ODEwNywiZXhwIjoxNzUxNTUxNzA3fQ.p0aLOeQdvnL4i5QQJxV2k8EAlJ9dbOMf0FPNO5zpMaw
+2025-07-03T13:08:47.780Z info: Token is verified
+2025-07-03T13:08:47.780Z info: decoded: {"id":"686680bf6e22184b72b8c418","iat":1751548107,"exp":1751551707}
+2025-07-03T13:08:47.836Z info: Request to authMiddleware.authorize has exited
+2025-07-03T13:08:47.837Z info: Request to productController.getProducts has entered
+2025-07-03T13:08:47.838Z info: Logged-in user info: {"_id":"686680bf6e22184b72b8c418","name":"Amri Singh","username":"Ami@123","email":"amr1@gmail.com","password":"$2b$10$E5x7j9595VTTzyzPgcVlHO/6WAIiE.KlCGulZTCSjh8cA0RKH5kIy","city":"Prayagraj","category":"Buyer","createdAt":"2025-07-03T13:08:15.161Z","updatedAt":"2025-07-03T13:08:15.161Z","__v":0}
+2025-07-03T13:08:47.896Z info: Fetched all products
+2025-07-03T13:08:47.897Z info: Products fetched successfully
+2025-07-03T13:08:47.900Z info: GET /product/getProducts 200 122.892 ms
+2025-07-03T13:13:49.463Z info: Request to authMiddleware.authorize has entered
+2025-07-03T13:13:49.464Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY4MGJmNmUyMjE4NGI3MmI4YzQxOCIsImlhdCI6MTc1MTU0ODEwNywiZXhwIjoxNzUxNTUxNzA3fQ.p0aLOeQdvnL4i5QQJxV2k8EAlJ9dbOMf0FPNO5zpMaw"}
+2025-07-03T13:13:49.464Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY4MGJmNmUyMjE4NGI3MmI4YzQxOCIsImlhdCI6MTc1MTU0ODEwNywiZXhwIjoxNzUxNTUxNzA3fQ.p0aLOeQdvnL4i5QQJxV2k8EAlJ9dbOMf0FPNO5zpMaw
+2025-07-03T13:13:49.466Z info: Token is verified
+2025-07-03T13:13:49.466Z info: decoded: {"id":"686680bf6e22184b72b8c418","iat":1751548107,"exp":1751551707}
+2025-07-03T13:13:49.526Z info: Request to authMiddleware.authorize has exited
+2025-07-03T13:13:49.571Z info: Request to productController.addProduct has entered
+2025-07-03T13:13:49.572Z info: User category: Buyer
+2025-07-03T13:13:49.573Z info: POST /product/addProduct 403 109.860 ms
+2025-07-03T13:14:08.794Z info: Request to authRoutes has entered
+2025-07-03T13:14:08.800Z info: Request to authRoutes has exited
+2025-07-03T13:14:08.978Z info: Request to productRoutes.js has entered
+2025-07-03T13:14:08.978Z info: Request to productRoutes.js has exited
+2025-07-03T13:14:08.983Z info: Server running on http://localhost:5002
+2025-07-03T13:14:09.831Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-04T10:50:06.497Z info: Request to authRoutes has entered
+2025-07-04T10:50:06.499Z info: Request to authRoutes has exited
+2025-07-04T10:50:06.763Z info: Request to productRoutes.js has entered
+2025-07-04T10:50:06.764Z info: Request to productRoutes.js has exited
+2025-07-04T10:50:06.769Z info: Server running on http://localhost:5002
+2025-07-04T10:50:09.036Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-04T10:53:55.267Z info: POST /auth/login 200 340.349 ms
+2025-07-04T10:55:02.624Z info: POST /product/getProducts 404 1.699 ms
+2025-07-04T10:55:09.476Z info: Request to authMiddleware.authorize has entered
+2025-07-04T10:55:09.477Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw"}
+2025-07-04T10:55:09.478Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw
+2025-07-04T10:55:09.481Z info: Token is verified
+2025-07-04T10:55:09.482Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751626435,"exp":1751630035}
+2025-07-04T10:55:09.582Z info: Request to authMiddleware.authorize has exited
+2025-07-04T10:55:09.583Z info: Request to productController.getProducts has entered
+2025-07-04T10:55:09.585Z info: Logged-in user info: {"_id":"68666f22f59a62e2557402a7","name":"Amrita Singh","username":"Amii@123","email":"amrita1@gmail.com","password":"$2b$10$SzDkwP30THLXJx6bfJ16BO7UiJS08LCdDDgqjKl8gh5Zcstsr1Ug2","city":"Prayagraj","category":"Seller","createdAt":"2025-07-03T11:53:06.545Z","updatedAt":"2025-07-03T11:53:06.545Z","__v":0}
+2025-07-04T10:55:09.654Z info: Fetched seller's products
+2025-07-04T10:55:09.654Z info: Products fetched successfully
+2025-07-04T10:55:09.656Z info: GET /product/getProducts 200 179.909 ms
+2025-07-04T10:57:04.090Z info: Request to authMiddleware.authorize has entered
+2025-07-04T10:57:04.092Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw"}
+2025-07-04T10:57:04.093Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw
+2025-07-04T10:57:04.096Z info: Token is verified
+2025-07-04T10:57:04.100Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751626435,"exp":1751630035}
+2025-07-04T10:57:04.183Z info: Request to authMiddleware.authorize has exited
+2025-07-04T10:57:04.208Z info: Request to productController.addProduct has entered
+2025-07-04T10:57:04.209Z info: User category: Seller
+2025-07-04T10:57:04.230Z error: Error: Must supply api_key
+    at ensureOption (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\utils\ensureOption.js:19:13)
+    at Object.sign_request (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\utils\index.js:1151:16)
+    at Object.process_request_params (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\utils\index.js:1203:22)
+    at call_api (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\uploader.js:474:18)
+    at Object.upload (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\uploader.js:53:10)
+    at Object.upload_stream (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\uploader.js:40:18)
+    at Object.upload_stream (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\node_modules\cloudinary\lib\utils\index.js:1400:21)
+    at uploadResponse (C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\controllers\productController.js:23:50)
+    at new Promise (<anonymous>)
+    at C:\Users\admin\.vscode\Logistics-Supply-Tracking\Backend\controllers\productController.js:22:36
+2025-07-04T10:57:04.232Z info: POST /product/addProduct 500 141.140 ms
+2025-07-04T11:20:16.375Z info: Request to authRoutes has entered
+2025-07-04T11:20:16.377Z info: Request to authRoutes has exited
+2025-07-04T11:20:16.625Z info: Request to productRoutes.js has entered
+2025-07-04T11:20:16.626Z info: Request to productRoutes.js has exited
+2025-07-04T11:20:16.630Z info: Server running on http://localhost:5002
+2025-07-04T11:20:18.354Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-04T11:22:18.368Z info: Request to authMiddleware.authorize has entered
+2025-07-04T11:22:18.369Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw"}
+2025-07-04T11:22:18.369Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw
+2025-07-04T11:22:18.373Z info: Token is verified
+2025-07-04T11:22:18.373Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751626435,"exp":1751630035}
+2025-07-04T11:22:18.787Z info: Request to authMiddleware.authorize has exited
+2025-07-04T11:22:18.795Z info: Request to productController.addProduct has entered
+2025-07-04T11:22:18.796Z info: User category: Seller
+2025-07-04T11:22:23.426Z info: POST /product/addProduct 500 5056.162 ms
+2025-07-04T11:44:31.067Z info: Request to authMiddleware.authorize has entered
+2025-07-04T11:44:31.085Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw"}
+2025-07-04T11:44:31.087Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw
+2025-07-04T11:44:31.115Z info: Token is verified
+2025-07-04T11:44:31.122Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751626435,"exp":1751630035}
+2025-07-04T11:44:31.458Z info: Request to authMiddleware.authorize has exited
+2025-07-04T11:44:31.464Z info: Request to productController.addProduct has entered
+2025-07-04T11:44:31.465Z info: User category: Seller
+2025-07-04T11:44:34.305Z info: POST /product/addProduct 500 3244.434 ms
+2025-07-04T11:45:57.747Z info: Request to authMiddleware.authorize has entered
+2025-07-04T11:45:57.749Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw"}
+2025-07-04T11:45:57.750Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MTYyNjQzNSwiZXhwIjoxNzUxNjMwMDM1fQ.vp-jtEYxvM5ieynrIVkaqNG2agm5cNihRQnjBazQ_sw
+2025-07-04T11:45:57.755Z info: Token is verified
+2025-07-04T11:45:57.756Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1751626435,"exp":1751630035}
+2025-07-04T11:45:58.071Z info: Request to authMiddleware.authorize has exited
+2025-07-04T11:45:58.075Z info: Request to productController.addProduct has entered
+2025-07-04T11:45:58.076Z info: User category: Seller
+2025-07-04T11:46:02.776Z info: POST /product/addProduct 201 5027.936 ms
+2025-07-04T12:15:43.505Z info: Request to authRoutes has entered
+2025-07-04T12:15:43.507Z info: Request to authRoutes has exited
+2025-07-04T12:15:43.795Z info: Request to productRoutes.js has entered
+2025-07-04T12:15:43.796Z info: Request to productRoutes.js has exited
+2025-07-04T12:15:43.802Z info: Server running on http://localhost:5002
+2025-07-15T23:03:33.016Z info: Request to authRoutes has entered
+2025-07-15T23:03:33.018Z info: Request to authRoutes has exited
+2025-07-15T23:03:33.257Z info: Request to productRoutes.js has entered
+2025-07-15T23:03:33.258Z info: Request to productRoutes.js has exited
+2025-07-15T23:03:33.260Z info: Request to orderRoutes.js has entered
+2025-07-15T23:03:33.265Z info: Request to orderRoutes.js has exited
+2025-07-15T23:03:33.274Z info: Server running on http://localhost:5002
+2025-07-15T23:03:34.699Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-15T23:31:19.642Z info: Request to authRoutes has entered
+2025-07-15T23:31:19.644Z info: Request to authRoutes has exited
+2025-07-15T23:31:19.812Z info: Request to productRoutes.js has entered
+2025-07-15T23:31:19.813Z info: Request to productRoutes.js has exited
+2025-07-15T23:31:19.815Z info: Request to orderRoutes.js has entered
+2025-07-15T23:31:19.821Z info: Request to orderRoutes.js has exited
+2025-07-15T23:31:19.829Z info: Server running on http://localhost:5002
+2025-07-15T23:31:23.581Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-15T23:35:18.406Z info: POST /signup 404 5.635 ms
+2025-07-15T23:40:21.892Z info: POST /signup 404 3.146 ms
+2025-07-15T23:41:25.197Z info: POST /auth/signup 201 571.716 ms
+2025-07-15T23:42:46.959Z info: POST /auth/login 200 316.362 ms
+2025-07-15T23:47:32.387Z info: POST /auth/login 200 226.172 ms
+2025-07-15T23:50:54.186Z info: Request to authRoutes has entered
+2025-07-15T23:50:54.194Z info: Request to authRoutes has exited
+2025-07-15T23:50:54.392Z info: Request to productRoutes.js has entered
+2025-07-15T23:50:54.393Z info: Request to productRoutes.js has exited
+2025-07-15T23:50:54.394Z info: Request to orderRoutes.js has entered
+2025-07-15T23:50:54.401Z info: Request to orderRoutes.js has exited
+2025-07-15T23:50:54.407Z info: Server running on http://localhost:5002
+2025-07-15T23:50:56.066Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-15T23:52:27.447Z info: Request to authRoutes has entered
+2025-07-15T23:52:27.449Z info: Request to authRoutes has exited
+2025-07-15T23:52:27.560Z info: Request to productRoutes.js has entered
+2025-07-15T23:52:27.561Z info: Request to productRoutes.js has exited
+2025-07-15T23:52:27.562Z info: Request to orderRoutes.js has entered
+2025-07-15T23:52:27.566Z info: Request to orderRoutes.js has exited
+2025-07-15T23:52:27.571Z info: Server running on http://localhost:5002
+2025-07-15T23:52:28.786Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-15T23:52:46.454Z info: POST //login 404 5.068 ms
+2025-07-15T23:52:55.205Z info: POST /auth/login 200 334.374 ms
+2025-07-15T23:53:17.183Z info: Request to authMiddleware.authorize has entered
+2025-07-15T23:53:17.185Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MjYyMzU3NSwiZXhwIjoxNzUyNjI3MTc1fQ.vlb0ZciUpVww8dvjJ3DLKbLP1hfLsWRYNzlADvFQLs4"}
+2025-07-15T23:53:17.186Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjY2ZjIyZjU5YTYyZTI1NTc0MDJhNyIsImlhdCI6MTc1MjYyMzU3NSwiZXhwIjoxNzUyNjI3MTc1fQ.vlb0ZciUpVww8dvjJ3DLKbLP1hfLsWRYNzlADvFQLs4
+2025-07-15T23:53:17.190Z info: Token is verified
+2025-07-15T23:53:17.193Z info: decoded: {"id":"68666f22f59a62e2557402a7","iat":1752623575,"exp":1752627175}
+2025-07-15T23:53:17.308Z info: Request to authMiddleware.authorize has exited
+2025-07-15T23:53:17.310Z info: Request to productController.addProduct has entered
+2025-07-15T23:53:17.310Z info: User category: Seller
+2025-07-15T23:53:17.331Z info: POST /product/addProduct 500 147.736 ms
+2025-07-15T23:57:09.417Z info: POST /product/addProduct%0A 404 5.288 ms
+2025-07-16T00:00:16.099Z info: POST /product/addProduct%0A 404 0.568 ms
+2025-07-16T00:06:13.264Z info: POST /product/addProduct%0A 404 1.886 ms
+2025-07-16T00:07:49.573Z info: POST /product/addProduct%0A 404 2.428 ms
+2025-07-16T00:07:57.865Z info: POST /product/addProduct%0A 404 0.314 ms
+2025-07-16T00:08:58.042Z info: Request to authRoutes has entered
+2025-07-16T00:08:58.051Z info: Request to authRoutes has exited
+2025-07-16T00:08:58.392Z info: Request to productRoutes.js has entered
+2025-07-16T00:08:58.393Z info: Request to productRoutes.js has exited
+2025-07-16T00:08:58.394Z info: Request to orderRoutes.js has entered
+2025-07-16T00:08:58.405Z info: Request to orderRoutes.js has exited
+2025-07-16T00:08:58.416Z info: Server running on http://localhost:5002
+2025-07-16T00:08:59.565Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-16T00:09:05.141Z info: POST /product/addProduct%0A 404 3.732 ms
+2025-07-16T00:10:20.127Z info: POST /product/addProduct%0A 404 3.598 ms
+2025-07-16T00:15:54.576Z info: Request to authRoutes has entered
+2025-07-16T00:15:54.585Z info: Request to authRoutes has exited
+2025-07-16T00:15:54.953Z info: Request to productRoutes.js has entered
+2025-07-16T00:15:54.954Z info: Request to productRoutes.js has exited
+2025-07-16T00:15:54.955Z info: Request to orderRoutes.js has entered
+2025-07-16T00:15:54.963Z info: Request to orderRoutes.js has exited
+2025-07-16T00:15:54.970Z info: Server running on http://localhost:5002
+2025-07-16T00:16:01.161Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-16T00:16:38.239Z info: POST /auth/login%0A 404 4.047 ms
+2025-07-16T00:17:01.810Z info: POST /auth/login%0A 404 0.913 ms
+2025-07-16T00:18:03.033Z info: POST /auth/login%0A 404 0.471 ms
+2025-07-16T00:19:56.310Z info: POST /auth//signup%0A 404 0.416 ms
+2025-07-16T00:20:19.956Z info: POST /auth//signup%0A 404 0.958 ms
+2025-07-16T00:20:43.433Z info: Request to authRoutes has entered
+2025-07-16T00:20:43.435Z info: Request to authRoutes has exited
+2025-07-16T00:20:43.538Z info: Request to productRoutes.js has entered
+2025-07-16T00:20:43.538Z info: Request to productRoutes.js has exited
+2025-07-16T00:20:43.539Z info: Request to orderRoutes.js has entered
+2025-07-16T00:20:43.546Z info: Request to orderRoutes.js has exited
+2025-07-16T00:20:43.550Z info: Server running on http://localhost:5002
+2025-07-19T19:27:55.181Z info: Request to authRoutes has entered
+2025-07-19T19:27:55.183Z info: Request to authRoutes has exited
+2025-07-19T19:27:55.481Z info: Request to productRoutes.js has entered
+2025-07-19T19:27:55.481Z info: Request to productRoutes.js has exited
+2025-07-19T19:27:55.482Z info: Request to orderRoutes.js has entered
+2025-07-19T19:27:55.490Z info: Request to orderRoutes.js has exited
+2025-07-19T19:27:55.498Z info: Server running on http://localhost:5002
+2025-07-19T19:27:56.699Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-19T19:37:38.873Z info: POST /auth//signup%0A 404 4.518 ms
+2025-07-19T19:37:48.351Z info: POST /auth/signup%0A 404 6.570 ms
+2025-07-19T19:42:10.375Z info: Request to authRoutes has entered
+2025-07-19T19:42:10.376Z info: Request to authRoutes has exited
+2025-07-19T19:42:10.596Z info: Request to productRoutes.js has entered
+2025-07-19T19:42:10.597Z info: Request to productRoutes.js has exited
+2025-07-19T19:42:10.599Z info: Request to orderRoutes.js has entered
+2025-07-19T19:42:10.607Z info: Request to orderRoutes.js has exited
+2025-07-19T19:42:10.615Z info: Server running on http://localhost:5002
+2025-07-19T19:42:11.852Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-19T19:44:23.026Z info: POST /auth/login%0A 404 5.209 ms
+2025-07-19T19:47:57.946Z info: Request to authRoutes has entered
+2025-07-19T19:47:57.949Z info: Request to authRoutes has exited
+2025-07-19T19:47:58.102Z info: Request to productRoutes.js has entered
+2025-07-19T19:47:58.103Z info: Request to productRoutes.js has exited
+2025-07-19T19:47:58.104Z info: Request to orderRoutes.js has entered
+2025-07-19T19:47:58.110Z info: Request to orderRoutes.js has exited
+2025-07-19T19:47:58.113Z info: Server running on http://localhost:5002
+2025-07-19T19:47:59.094Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-19T19:50:09.347Z info: Request to authRoutes has entered
+2025-07-19T19:50:09.349Z info: Request to authRoutes has exited
+2025-07-19T19:50:09.433Z info: Request to productRoutes.js has entered
+2025-07-19T19:50:09.438Z info: Request to productRoutes.js has exited
+2025-07-19T19:50:09.439Z info: Request to orderRoutes.js has entered
+2025-07-19T19:50:09.446Z info: Request to orderRoutes.js has exited
+2025-07-19T19:50:09.449Z info: Server running on http://localhost:5002
+2025-07-19T19:50:10.424Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-19T19:50:43.586Z info: POST / 404 2.960 ms
+2025-07-19T19:55:59.312Z info: Request to authRoutes has entered
+2025-07-19T19:55:59.323Z info: Request to authRoutes has exited
+2025-07-19T19:55:59.493Z info: Request to productRoutes.js has entered
+2025-07-19T19:55:59.494Z info: Request to productRoutes.js has exited
+2025-07-19T19:55:59.495Z info: Request to orderRoutes.js has entered
+2025-07-19T19:55:59.500Z info: Request to orderRoutes.js has exited
+2025-07-19T19:55:59.509Z info: Server running on http://localhost:5002
+2025-07-19T19:56:00.887Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-19T20:01:06.837Z info: Request to authRoutes has entered
+2025-07-19T20:01:06.838Z info: Request to authRoutes has exited
+2025-07-19T20:01:06.978Z info: Request to productRoutes.js has entered
+2025-07-19T20:01:06.979Z info: Request to productRoutes.js has exited
+2025-07-19T20:01:06.979Z info: Request to orderRoutes.js has entered
+2025-07-19T20:01:06.984Z info: Request to orderRoutes.js has exited
+2025-07-19T20:01:06.987Z info: Server running on http://localhost:5002
+2025-07-19T20:01:08.196Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-19T20:01:28.390Z info: POST /auth/login 200 140.070 ms
+2025-07-19T20:08:13.939Z info: POST /auth/singup 404 1.962 ms
+2025-07-19T20:08:29.877Z info: POST /auth/signup 201 357.967 ms
+2025-07-19T20:08:52.428Z info: POST /auth/login 200 191.996 ms
+2025-07-19T20:09:55.418Z info: POST /product//getProducts 404 0.715 ms
+2025-07-19T20:10:04.328Z info: POST /product/getProducts 404 0.458 ms
+2025-07-19T20:10:17.459Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:10:17.461Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY"}
+2025-07-19T20:10:17.462Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY
+2025-07-19T20:10:17.468Z info: Token is verified
+2025-07-19T20:10:17.470Z info: decoded: {"id":"687bfb3da05c7856e5e35995","iat":1752955732,"exp":1752959332}
+2025-07-19T20:10:17.523Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:10:17.524Z info: Request to productController.getProducts has entered
+2025-07-19T20:10:17.524Z info: Logged-in user info: {"_id":"687bfb3da05c7856e5e35995","name":"Singh","username":"Am@123","email":"amri@gmail.com","password":"$2b$10$BPtC.q/4/NPNMZxS33/aiOzqhqZgh5Mov2WDaenEW/wc94SJVzkPC","city":"Prayagraj","category":"Buyer","admin":false,"status":false,"product_request_queue":[],"product_left_to_deliver":[],"createdAt":"2025-07-19T20:08:29.782Z","updatedAt":"2025-07-19T20:08:29.782Z","__v":0}
+2025-07-19T20:10:17.678Z info: Fetched all products
+2025-07-19T20:10:17.679Z info: Products fetched successfully
+2025-07-19T20:10:17.684Z info: GET /product/getProducts 200 223.395 ms
+2025-07-19T20:15:21.285Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:15:21.286Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY"}
+2025-07-19T20:15:21.286Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY
+2025-07-19T20:15:21.288Z info: Token is verified
+2025-07-19T20:15:21.289Z info: decoded: {"id":"687bfb3da05c7856e5e35995","iat":1752955732,"exp":1752959332}
+2025-07-19T20:15:21.335Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:15:21.339Z info: Request to addOrder has entered
+2025-07-19T20:15:21.340Z error: Product ID and quantity are required
+2025-07-19T20:15:21.342Z info: POST /order/addOrder 400 56.215 ms
+2025-07-19T20:15:56.445Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:15:56.445Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY"}
+2025-07-19T20:15:56.446Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY
+2025-07-19T20:15:56.448Z info: Token is verified
+2025-07-19T20:15:56.448Z info: decoded: {"id":"687bfb3da05c7856e5e35995","iat":1752955732,"exp":1752959332}
+2025-07-19T20:15:56.524Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:15:56.526Z info: Request to addOrder has entered
+2025-07-19T20:15:56.526Z error: Product ID and quantity are required
+2025-07-19T20:15:56.529Z info: POST /order/addOrder 400 83.441 ms
+2025-07-19T20:17:16.402Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:17:16.403Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY"}
+2025-07-19T20:17:16.403Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY
+2025-07-19T20:17:16.406Z info: Token is verified
+2025-07-19T20:17:16.407Z info: decoded: {"id":"687bfb3da05c7856e5e35995","iat":1752955732,"exp":1752959332}
+2025-07-19T20:17:16.490Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:17:16.491Z info: Request to addOrder has entered
+2025-07-19T20:17:16.492Z info: Checking if product exists
+2025-07-19T20:17:16.539Z info: Product exists
+2025-07-19T20:17:16.539Z info: Checking if user is a buyer
+2025-07-19T20:17:16.540Z info: User is a buyer
+2025-07-19T20:17:16.540Z info: Adding order to database with pending status
+2025-07-19T20:17:16.694Z info: there are not sufficient unit availble for this Product
+2025-07-19T20:17:16.696Z info: POST /order/addOrder 403 293.394 ms
+2025-07-19T20:17:22.058Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:17:22.059Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY"}
+2025-07-19T20:17:22.059Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY
+2025-07-19T20:17:22.061Z info: Token is verified
+2025-07-19T20:17:22.061Z info: decoded: {"id":"687bfb3da05c7856e5e35995","iat":1752955732,"exp":1752959332}
+2025-07-19T20:17:22.192Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:17:22.192Z info: Request to addOrder has entered
+2025-07-19T20:17:22.193Z info: Checking if product exists
+2025-07-19T20:17:22.256Z info: Product exists
+2025-07-19T20:17:22.257Z info: Checking if user is a buyer
+2025-07-19T20:17:22.258Z info: User is a buyer
+2025-07-19T20:17:22.258Z info: Adding order to database with pending status
+2025-07-19T20:17:22.536Z info: Order added successfully
+2025-07-19T20:17:22.537Z info: Updating Delivery admin's order entries
+2025-07-19T20:17:22.547Z info: POST /order/addOrder 500 487.223 ms
+2025-07-19T20:17:31.071Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:17:31.073Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY"}
+2025-07-19T20:17:31.074Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY
+2025-07-19T20:17:31.077Z info: Token is verified
+2025-07-19T20:17:31.079Z info: decoded: {"id":"687bfb3da05c7856e5e35995","iat":1752955732,"exp":1752959332}
+2025-07-19T20:17:31.130Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:17:31.131Z info: Request to addOrder has entered
+2025-07-19T20:17:31.131Z info: Checking if product exists
+2025-07-19T20:17:31.172Z info: Product exists
+2025-07-19T20:17:31.173Z info: Checking if user is a buyer
+2025-07-19T20:17:31.174Z info: User is a buyer
+2025-07-19T20:17:31.175Z info: Adding order to database with pending status
+2025-07-19T20:17:31.342Z info: there are not sufficient unit availble for this Product
+2025-07-19T20:17:31.344Z info: POST /order/addOrder 403 272.113 ms
+2025-07-19T20:17:40.259Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:17:40.261Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY"}
+2025-07-19T20:17:40.262Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JmYjNkYTA1Yzc4NTZlNWUzNTk5NSIsImlhdCI6MTc1Mjk1NTczMiwiZXhwIjoxNzUyOTU5MzMyfQ.fhJeC-tNZjgILcFNQGTyYS2tvZQ8_CdKuvBclrLw2CY
+2025-07-19T20:17:40.264Z info: Token is verified
+2025-07-19T20:17:40.266Z info: decoded: {"id":"687bfb3da05c7856e5e35995","iat":1752955732,"exp":1752959332}
+2025-07-19T20:17:40.353Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:17:40.354Z info: Request to addOrder has entered
+2025-07-19T20:17:40.355Z info: Checking if product exists
+2025-07-19T20:17:40.411Z info: Product exists
+2025-07-19T20:17:40.411Z info: Checking if user is a buyer
+2025-07-19T20:17:40.412Z info: User is a buyer
+2025-07-19T20:17:40.413Z info: Adding order to database with pending status
+2025-07-19T20:17:40.559Z info: there are not sufficient unit availble for this Product
+2025-07-19T20:17:40.560Z info: POST /order/addOrder 403 301.229 ms
+2025-07-19T20:29:16.379Z info: POST /auth/signup 400 301.734 ms
+2025-07-19T20:29:25.262Z info: POST /auth/signup 400 86.968 ms
+2025-07-19T20:32:49.927Z info: POST /auth/signup 201 397.619 ms
+2025-07-19T20:33:21.325Z info: POST /auth/signup 201 425.396 ms
+2025-07-19T20:34:43.396Z info: POST /auth/signup 400 166.060 ms
+2025-07-19T20:35:02.119Z info: POST /auth/signup 400 90.704 ms
+2025-07-19T20:35:24.504Z info: POST /auth/signup 201 420.689 ms
+2025-07-19T20:36:12.016Z info: POST /auth/login 200 254.528 ms
+2025-07-19T20:39:08.975Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:39:08.976Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA"}
+2025-07-19T20:39:08.977Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA
+2025-07-19T20:39:08.982Z info: Token is verified
+2025-07-19T20:39:08.983Z info: decoded: {"id":"687c018ca05c7856e5e359bd","iat":1752957372,"exp":1752960972}
+2025-07-19T20:39:09.029Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:39:09.049Z info: Request to addTrack has entered
+2025-07-19T20:39:09.049Z info: Checking if order exists
+2025-07-19T20:39:09.184Z info: Order exists
+2025-07-19T20:39:09.185Z info: Checking if user is a delivery Admin
+2025-07-19T20:39:09.185Z info: User is a delivery Admin
+2025-07-19T20:39:09.185Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-19T20:39:09.193Z info: POST /order/addTrack 500 222.300 ms
+2025-07-19T20:56:22.080Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:56:22.089Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA"}
+2025-07-19T20:56:22.089Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA
+2025-07-19T20:56:22.110Z info: Token is verified
+2025-07-19T20:56:22.110Z info: decoded: {"id":"687c018ca05c7856e5e359bd","iat":1752957372,"exp":1752960972}
+2025-07-19T20:56:22.192Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:56:22.193Z info: Request to addTrack has entered
+2025-07-19T20:56:22.193Z info: Checking if order exists
+2025-07-19T20:56:22.299Z info: Order exists
+2025-07-19T20:56:22.301Z info: Checking if user is a delivery Admin
+2025-07-19T20:56:22.302Z info: User is a delivery Admin
+2025-07-19T20:56:22.304Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-19T20:56:22.333Z info: POST /order/addTrack 500 251.693 ms
+2025-07-19T20:56:24.747Z info: Request to authMiddleware.authorize has entered
+2025-07-19T20:56:24.747Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA"}
+2025-07-19T20:56:24.748Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA
+2025-07-19T20:56:24.752Z info: Token is verified
+2025-07-19T20:56:24.753Z info: decoded: {"id":"687c018ca05c7856e5e359bd","iat":1752957372,"exp":1752960972}
+2025-07-19T20:56:24.802Z info: Request to authMiddleware.authorize has exited
+2025-07-19T20:56:24.803Z info: Request to addTrack has entered
+2025-07-19T20:56:24.805Z info: Checking if order exists
+2025-07-19T20:56:24.954Z info: Order exists
+2025-07-19T20:56:24.955Z info: Checking if user is a delivery Admin
+2025-07-19T20:56:24.957Z info: User is a delivery Admin
+2025-07-19T20:56:24.959Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-19T20:56:24.963Z info: POST /order/addTrack 500 215.000 ms
+2025-07-19T21:13:56.665Z info: Request to authRoutes has entered
+2025-07-19T21:13:56.673Z info: Request to authRoutes has exited
+2025-07-19T21:13:56.888Z info: Request to productRoutes.js has entered
+2025-07-19T21:13:56.889Z info: Request to productRoutes.js has exited
+2025-07-19T21:13:56.891Z info: Request to orderRoutes.js has entered
+2025-07-19T21:13:56.899Z info: Request to orderRoutes.js has exited
+2025-07-19T21:13:56.906Z info: Server running on http://localhost:5002
+2025-07-19T21:13:57.496Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-19T21:14:13.152Z info: Request to authMiddleware.authorize has entered
+2025-07-19T21:14:13.153Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA"}
+2025-07-19T21:14:13.153Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA
+2025-07-19T21:14:13.156Z info: Token is verified
+2025-07-19T21:14:13.156Z info: decoded: {"id":"687c018ca05c7856e5e359bd","iat":1752957372,"exp":1752960972}
+2025-07-19T21:14:13.217Z info: Request to authMiddleware.authorize has exited
+2025-07-19T21:14:13.217Z info: Request to addTrack has entered
+2025-07-19T21:14:13.218Z info: Checking if order exists
+2025-07-19T21:14:13.257Z info: Order exists
+2025-07-19T21:14:13.258Z info: Checking if user is a delivery Admin
+2025-07-19T21:14:13.258Z info: User is a delivery Admin
+2025-07-19T21:14:13.259Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-19T21:14:13.264Z info: POST /order/addTrack 500 109.156 ms
+2025-07-19T21:14:53.591Z info: Request to authRoutes has entered
+2025-07-19T21:14:53.593Z info: Request to authRoutes has exited
+2025-07-19T21:14:53.743Z info: Request to productRoutes.js has entered
+2025-07-19T21:14:53.743Z info: Request to productRoutes.js has exited
+2025-07-19T21:14:53.744Z info: Request to orderRoutes.js has entered
+2025-07-19T21:14:53.750Z info: Request to orderRoutes.js has exited
+2025-07-19T21:14:53.753Z info: Server running on http://localhost:5002
+2025-07-19T21:14:54.296Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-19T21:15:02.345Z info: Request to authMiddleware.authorize has entered
+2025-07-19T21:15:02.345Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA"}
+2025-07-19T21:15:02.346Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2MwMThjYTA1Yzc4NTZlNWUzNTliZCIsImlhdCI6MTc1Mjk1NzM3MiwiZXhwIjoxNzUyOTYwOTcyfQ.fCe3OE4zcu2DYXklbN62c57NAkYXw86IkC9EtBTfRuA
+2025-07-19T21:15:02.349Z info: Token is verified
+2025-07-19T21:15:02.350Z info: decoded: {"id":"687c018ca05c7856e5e359bd","iat":1752957372,"exp":1752960972}
+2025-07-19T21:15:02.403Z info: Request to authMiddleware.authorize has exited
+2025-07-19T21:15:02.403Z info: Request to addTrack has entered
+2025-07-19T21:15:02.404Z info: Checking if order exists
+2025-07-19T21:15:02.446Z info: Order exists
+2025-07-19T21:15:02.447Z info: Checking if user is a delivery Admin
+2025-07-19T21:15:02.448Z info: User is a delivery Admin
+2025-07-19T21:15:02.448Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-19T21:15:02.454Z info: POST /order/addTrack 500 108.649 ms
+2025-07-26T11:39:03.534Z info: Request to authRoutes has entered
+2025-07-26T11:39:03.536Z info: Request to authRoutes has exited
+2025-07-26T11:39:03.796Z info: Request to productRoutes.js has entered
+2025-07-26T11:39:03.797Z info: Request to productRoutes.js has exited
+2025-07-26T11:39:03.798Z info: Request to orderRoutes.js has entered
+2025-07-26T11:39:03.803Z info: Request to orderRoutes.js has exited
+2025-07-26T11:39:03.809Z info: Server running on http://localhost:5002
+2025-07-26T11:39:06.271Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-26T11:48:40.088Z info: POST /auth/signup 201 907.125 ms
+2025-07-26T13:05:59.823Z info: POST /auth/signup 400 14285.279 ms
+2025-07-26T13:06:03.709Z info: POST /auth/signup 400 271.685 ms
+2025-07-26T13:06:07.493Z info: POST /auth/signup 400 245.822 ms
+2025-07-26T13:35:59.727Z info: Request to authRoutes has entered
+2025-07-26T13:35:59.729Z info: Request to authRoutes has exited
+2025-07-26T13:35:59.947Z info: Request to productRoutes.js has entered
+2025-07-26T13:35:59.947Z info: Request to productRoutes.js has exited
+2025-07-26T13:35:59.949Z info: Request to orderRoutes.js has entered
+2025-07-26T13:35:59.954Z info: Request to orderRoutes.js has exited
+2025-07-26T13:35:59.962Z info: Server running on http://localhost:5002
+2025-07-26T13:36:03.374Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net
+2025-07-26T13:36:19.570Z info: POST /auth/signup 201 810.542 ms
+2025-07-26T13:52:58.679Z info: POST /auth/signup 201 918.961 ms
+2025-07-26T14:03:22.081Z info: POST /auth/login 200 416.984 ms
+2025-07-27T05:02:02.146Z info: Request to authRoutes has entered
+2025-07-27T05:02:02.149Z info: Request to authRoutes has exited
+2025-07-27T05:02:02.419Z info: Request to productRoutes.js has entered
+2025-07-27T05:02:02.422Z info: Request to productRoutes.js has exited
+2025-07-27T05:02:02.424Z info: Request to orderRoutes.js has entered
+2025-07-27T05:02:02.439Z info: Request to orderRoutes.js has exited
+2025-07-27T05:02:02.446Z info: Server running on http://localhost:5002
+2025-07-27T05:02:05.508Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-27T05:05:47.698Z info: POST /auth/login 200 217.789 ms
+2025-07-27T05:08:23.852Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:08:23.853Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzU5Mjc0NywiZXhwIjoxNzUzNTk2MzQ3fQ.1J8MENpRGQuSdzYO5dM0y4SqWmCd6XNtby09o7QJMiI"}
+2025-07-27T05:08:23.853Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzU5Mjc0NywiZXhwIjoxNzUzNTk2MzQ3fQ.1J8MENpRGQuSdzYO5dM0y4SqWmCd6XNtby09o7QJMiI
+2025-07-27T05:08:23.854Z info: Token is verified
+2025-07-27T05:08:23.855Z info: decoded: {"id":"6884c0976d02d1cd26b2fd49","iat":1753592747,"exp":1753596347}
+2025-07-27T05:08:24.165Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:08:24.174Z info: Request to productController.addProduct has entered
+2025-07-27T05:08:24.175Z info: User category: Seller
+2025-07-27T05:08:29.395Z info: Product added successfully
+2025-07-27T05:08:29.398Z info: POST /product/addproduct 201 5545.231 ms
+2025-07-27T05:09:59.703Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:09:59.704Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzU5Mjc0NywiZXhwIjoxNzUzNTk2MzQ3fQ.1J8MENpRGQuSdzYO5dM0y4SqWmCd6XNtby09o7QJMiI"}
+2025-07-27T05:09:59.704Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzU5Mjc0NywiZXhwIjoxNzUzNTk2MzQ3fQ.1J8MENpRGQuSdzYO5dM0y4SqWmCd6XNtby09o7QJMiI
+2025-07-27T05:09:59.705Z info: Token is verified
+2025-07-27T05:09:59.705Z info: decoded: {"id":"6884c0976d02d1cd26b2fd49","iat":1753592747,"exp":1753596347}
+2025-07-27T05:10:00.028Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:10:00.032Z info: Request to productController.addProduct has entered
+2025-07-27T05:10:00.033Z info: User category: Seller
+2025-07-27T05:10:05.807Z info: Product added successfully
+2025-07-27T05:10:05.809Z info: POST /product/addproduct 201 6105.498 ms
+2025-07-27T05:11:41.592Z info: POST /auth/login 200 278.464 ms
+2025-07-27T05:13:47.887Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:13:47.888Z info: cookies: {}
+2025-07-27T05:13:47.889Z info: POST /order/addOrder 401 2.100 ms
+2025-07-27T05:14:00.098Z info: POST /auth/login 200 344.597 ms
+2025-07-27T05:17:35.220Z info: POST /auth/login 200 321.218 ms
+2025-07-27T05:19:31.214Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:19:31.214Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzU5MzQ1NSwiZXhwIjoxNzUzNTk3MDU1fQ.mJL6EiDlOHDGFHX0T-u2zm3sDZuDaBtvo3nT7iAyf4Y"}
+2025-07-27T05:19:31.215Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzU5MzQ1NSwiZXhwIjoxNzUzNTk3MDU1fQ.mJL6EiDlOHDGFHX0T-u2zm3sDZuDaBtvo3nT7iAyf4Y
+2025-07-27T05:19:31.216Z info: Token is verified
+2025-07-27T05:19:31.216Z info: decoded: {"id":"6884c0976d02d1cd26b2fd49","iat":1753593455,"exp":1753597055}
+2025-07-27T05:19:31.308Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:19:31.310Z info: Request to productController.addProduct has entered
+2025-07-27T05:19:31.311Z info: User category: Seller
+2025-07-27T05:19:36.859Z info: Product added successfully
+2025-07-27T05:19:36.860Z info: POST /product/addProduct 201 5645.755 ms
+2025-07-27T05:21:31.898Z info: POST /auth/login 200 171.110 ms
+2025-07-27T05:23:20.959Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:23:20.960Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE"}
+2025-07-27T05:23:20.961Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE
+2025-07-27T05:23:20.963Z info: Token is verified
+2025-07-27T05:23:20.964Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753593691,"exp":1753597291}
+2025-07-27T05:23:21.111Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:23:21.114Z info: Request to addOrder has entered
+2025-07-27T05:23:21.116Z info: Checking if product exists
+2025-07-27T05:23:21.316Z info: Product exists
+2025-07-27T05:23:21.318Z info: Checking if user is a buyer
+2025-07-27T05:23:21.319Z info: User is a buyer
+2025-07-27T05:23:21.320Z info: Adding order to database with pending status
+2025-07-27T05:23:22.237Z info: Order added successfully
+2025-07-27T05:23:22.239Z info: Updating Delivery admin's order entries
+2025-07-27T05:23:22.545Z info: POST /order/addOrder 500 1585.576 ms
+2025-07-27T05:24:12.610Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:24:12.610Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE"}
+2025-07-27T05:24:12.611Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE
+2025-07-27T05:24:12.614Z info: Token is verified
+2025-07-27T05:24:12.614Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753593691,"exp":1753597291}
+2025-07-27T05:24:12.720Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:24:12.721Z info: Request to addOrder has entered
+2025-07-27T05:24:12.722Z error: Product ID and quantity are required
+2025-07-27T05:24:12.724Z info: POST /order/addOrder 400 114.004 ms
+2025-07-27T05:24:24.899Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:24:24.902Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE"}
+2025-07-27T05:24:24.904Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE
+2025-07-27T05:24:24.906Z info: Token is verified
+2025-07-27T05:24:24.911Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753593691,"exp":1753597291}
+2025-07-27T05:24:25.219Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:24:25.219Z info: Request to addOrder has entered
+2025-07-27T05:24:25.219Z info: Checking if product exists
+2025-07-27T05:24:25.519Z info: Product exists
+2025-07-27T05:24:25.520Z info: Checking if user is a buyer
+2025-07-27T05:24:25.520Z info: User is a buyer
+2025-07-27T05:24:25.521Z info: Adding order to database with pending status
+2025-07-27T05:24:25.934Z info: Order added successfully
+2025-07-27T05:24:25.935Z info: Updating Delivery admin's order entries
+2025-07-27T05:24:26.020Z info: POST /order/addOrder 500 1120.092 ms
+2025-07-27T05:26:45.765Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:26:45.773Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE"}
+2025-07-27T05:26:45.773Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE
+2025-07-27T05:26:45.793Z info: Token is verified
+2025-07-27T05:26:45.794Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753593691,"exp":1753597291}
+2025-07-27T05:26:45.933Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:26:45.935Z info: Request to addOrder has entered
+2025-07-27T05:26:45.935Z error: Product ID and quantity are required
+2025-07-27T05:26:45.944Z info: POST /order/addOrder 400 178.082 ms
+2025-07-27T05:27:38.874Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:27:38.875Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE"}
+2025-07-27T05:27:38.876Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE
+2025-07-27T05:27:38.879Z info: Token is verified
+2025-07-27T05:27:38.880Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753593691,"exp":1753597291}
+2025-07-27T05:27:39.056Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:27:39.057Z info: Request to addOrder has entered
+2025-07-27T05:27:39.058Z info: Checking if product exists
+2025-07-27T05:27:39.259Z info: Product exists
+2025-07-27T05:27:39.260Z info: Checking if user is a buyer
+2025-07-27T05:27:39.260Z info: User is a buyer
+2025-07-27T05:27:39.261Z info: Adding order to database with pending status
+2025-07-27T05:27:39.879Z info: Order added successfully
+2025-07-27T05:27:39.880Z info: Updating Delivery admin's order entries
+2025-07-27T05:27:40.093Z info: POST /order/addOrder 500 1218.311 ms
+2025-07-27T05:29:00.627Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:29:00.627Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE"}
+2025-07-27T05:29:00.628Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5MzY5MSwiZXhwIjoxNzUzNTk3MjkxfQ.FoKwpZWR50NHGgdHW2H32AfnZ27oyGZtS0QtUgsCZOE
+2025-07-27T05:29:00.637Z info: Token is verified
+2025-07-27T05:29:00.639Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753593691,"exp":1753597291}
+2025-07-27T05:29:00.747Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:29:00.748Z info: Request to addOrder has entered
+2025-07-27T05:29:00.749Z info: Checking if product exists
+2025-07-27T05:29:00.874Z info: Product exists
+2025-07-27T05:29:00.875Z info: Checking if user is a buyer
+2025-07-27T05:29:00.875Z info: User is a buyer
+2025-07-27T05:29:00.878Z info: Adding order to database with pending status
+2025-07-27T05:29:01.295Z info: Order added successfully
+2025-07-27T05:29:01.296Z info: Updating Delivery admin's order entries
+2025-07-27T05:29:01.389Z info: POST /order/addOrder 500 761.756 ms
+2025-07-27T05:46:35.585Z info: Request to authRoutes has entered
+2025-07-27T05:46:35.593Z info: Request to authRoutes has exited
+2025-07-27T05:46:35.795Z info: Request to productRoutes.js has entered
+2025-07-27T05:46:35.795Z info: Request to productRoutes.js has exited
+2025-07-27T05:46:35.796Z info: Request to orderRoutes.js has entered
+2025-07-27T05:46:35.801Z info: Request to orderRoutes.js has exited
+2025-07-27T05:46:35.810Z info: Server running on http://localhost:5002
+2025-07-27T05:46:38.259Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-27T05:53:58.208Z info: POST /auth/login 200 378.692 ms
+2025-07-27T05:54:57.081Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:54:57.082Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzU5NTYzOCwiZXhwIjoxNzUzNTk5MjM4fQ.5za3h_6Wv0WUHBQI3CAKdxPaF948zJgK77x2LruKvS4"}
+2025-07-27T05:54:57.083Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzU5NTYzOCwiZXhwIjoxNzUzNTk5MjM4fQ.5za3h_6Wv0WUHBQI3CAKdxPaF948zJgK77x2LruKvS4
+2025-07-27T05:54:57.088Z info: Token is verified
+2025-07-27T05:54:57.090Z info: decoded: {"id":"6884c0976d02d1cd26b2fd49","iat":1753595638,"exp":1753599238}
+2025-07-27T05:54:57.263Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:54:57.303Z info: Request to productController.addProduct has entered
+2025-07-27T05:54:57.305Z info: User category: Seller
+2025-07-27T05:55:03.334Z info: Product added successfully
+2025-07-27T05:55:03.337Z info: POST /product/addProduct 201 6255.089 ms
+2025-07-27T05:56:33.313Z info: POST /auth/login 400 356.264 ms
+2025-07-27T05:56:39.043Z info: POST /auth/login 400 205.574 ms
+2025-07-27T05:57:05.799Z info: POST /auth/login 200 275.587 ms
+2025-07-27T05:58:20.097Z info: Request to authMiddleware.authorize has entered
+2025-07-27T05:58:20.098Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5NTgyNSwiZXhwIjoxNzUzNTk5NDI1fQ.a0mJyQl3REqCCn7rV8EGsdZeJnUh3LmfO9dFyC7vJQA"}
+2025-07-27T05:58:20.098Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzU5NTgyNSwiZXhwIjoxNzUzNTk5NDI1fQ.a0mJyQl3REqCCn7rV8EGsdZeJnUh3LmfO9dFyC7vJQA
+2025-07-27T05:58:20.100Z info: Token is verified
+2025-07-27T05:58:20.100Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753595825,"exp":1753599425}
+2025-07-27T05:58:20.203Z info: Request to authMiddleware.authorize has exited
+2025-07-27T05:58:20.204Z info: Request to addOrder has entered
+2025-07-27T05:58:20.204Z info: Checking if product exists
+2025-07-27T05:58:20.317Z info: Product exists
+2025-07-27T05:58:20.318Z info: Checking if user is a buyer
+2025-07-27T05:58:20.318Z info: User is a buyer
+2025-07-27T05:58:20.319Z info: Adding order to database with pending status
+2025-07-27T05:58:21.138Z info: Order added successfully
+2025-07-27T05:58:21.139Z info: Updating Delivery admin's order entries
+2025-07-27T05:58:21.546Z info: Order request made to delivery Admin successfully
+2025-07-27T05:58:21.548Z info: POST /order/addOrder 201 1450.669 ms
+2025-07-28T12:48:02.225Z info: Request to authRoutes has entered
+2025-07-28T12:48:02.227Z info: Request to authRoutes has exited
+2025-07-28T12:48:02.789Z info: Request to productRoutes.js has entered
+2025-07-28T12:48:02.790Z info: Request to productRoutes.js has exited
+2025-07-28T12:48:02.791Z info: Request to orderRoutes.js has entered
+2025-07-28T12:48:02.798Z info: Request to orderRoutes.js has exited
+2025-07-28T12:48:02.813Z info: Server running on http://localhost:5002
+2025-07-28T12:48:05.963Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-28T13:07:14.029Z info: POST /auth/signup 400 709.557 ms
+2025-07-28T13:07:20.297Z info: POST /auth/signup 400 520.295 ms
+2025-07-28T13:07:28.692Z info: POST /auth/signup 400 216.899 ms
+2025-07-28T13:07:35.454Z info: POST /auth/signup 201 605.441 ms
+2025-07-28T13:11:37.425Z info: POST /auth/signup 400 115.846 ms
+2025-07-28T13:12:04.128Z info: POST /auth/signup 201 558.602 ms
+2025-07-28T13:14:51.040Z info: POST /auth/login 200 251.958 ms
+2025-07-28T13:22:11.281Z info: Request to authMiddleware.authorize has entered
+2025-07-28T13:22:11.285Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo"}
+2025-07-28T13:22:11.288Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo
+2025-07-28T13:22:11.304Z info: Token is verified
+2025-07-28T13:22:11.305Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753708491,"exp":1753712091}
+2025-07-28T13:22:11.437Z info: Request to authMiddleware.authorize has exited
+2025-07-28T13:22:11.447Z info: Request to addTrack has entered
+2025-07-28T13:22:11.447Z info: Checking if order exists
+2025-07-28T13:22:11.567Z info: Order exists
+2025-07-28T13:22:11.568Z info: Checking if user is a delivery Admin
+2025-07-28T13:22:11.568Z info: User is a delivery Admin
+2025-07-28T13:22:11.569Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-28T13:22:11.901Z info: Order does exist in the delivery admin's queue
+2025-07-28T13:22:11.902Z info: Adding track to order
+2025-07-28T13:22:11.914Z info: Seller added to track
+2025-07-28T13:22:11.915Z info: Adding middlemen to track
+2025-07-28T13:22:11.917Z info: Middlemen added to track
+2025-07-28T13:22:11.918Z info: Adding buyer to track
+2025-07-28T13:22:11.918Z info: Buyer added to track
+2025-07-28T13:22:12.200Z info: Track added successfully
+2025-07-28T13:22:12.202Z info: Updating user's order entries
+2025-07-28T13:22:12.460Z info: Seller's order entry updated
+2025-07-28T13:22:12.694Z info: Buyer's order entry updated
+2025-07-28T13:22:13.657Z info: Middleman's order entry updated for user 68877617b229f24a003b80ee
+2025-07-28T13:22:14.717Z info: Middleman's order entry updated for user 68877723b229f24a003b80f3
+2025-07-28T13:22:14.717Z info: Changing the order status to accepted
+2025-07-28T13:22:15.046Z info: Order status changed to accepted
+2025-07-28T13:22:15.047Z info: Removing order from delivery admin's product request queue
+2025-07-28T13:22:15.333Z info: Order removed from delivery admin's product request queue
+2025-07-28T13:22:15.334Z info: Uploading the track on web3
+2025-07-28T13:22:15.342Z info: POST /order/addTrack 500 4063.899 ms
+2025-07-28T13:31:13.056Z info: Request to authRoutes has entered
+2025-07-28T13:31:13.066Z info: Request to authRoutes has exited
+2025-07-28T13:31:13.269Z info: Request to productRoutes.js has entered
+2025-07-28T13:31:13.270Z info: Request to productRoutes.js has exited
+2025-07-28T13:31:13.271Z info: Request to orderRoutes.js has entered
+2025-07-28T13:31:13.298Z info: Request to orderRoutes.js has exited
+2025-07-28T13:31:13.303Z info: Server running on http://localhost:5002
+2025-07-28T13:31:17.049Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net
+2025-07-28T13:31:23.449Z info: Request to authMiddleware.authorize has entered
+2025-07-28T13:31:23.450Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo"}
+2025-07-28T13:31:23.450Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo
+2025-07-28T13:31:23.453Z info: Token is verified
+2025-07-28T13:31:23.453Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753708491,"exp":1753712091}
+2025-07-28T13:31:23.566Z info: Request to authMiddleware.authorize has exited
+2025-07-28T13:31:23.567Z info: Request to addTrack has entered
+2025-07-28T13:31:23.568Z info: Checking if order exists
+2025-07-28T13:31:23.679Z info: Order exists
+2025-07-28T13:31:23.679Z info: Checking if user is a delivery Admin
+2025-07-28T13:31:23.680Z info: User is a delivery Admin
+2025-07-28T13:31:23.681Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-28T13:31:23.784Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:31:23.789Z info: POST /order/addTrack 400 338.478 ms
+2025-07-28T13:33:51.956Z info: Request to authRoutes has entered
+2025-07-28T13:33:51.959Z info: Request to authRoutes has exited
+2025-07-28T13:33:52.120Z info: Request to productRoutes.js has entered
+2025-07-28T13:33:52.121Z info: Request to productRoutes.js has exited
+2025-07-28T13:33:52.122Z info: Request to orderRoutes.js has entered
+2025-07-28T13:33:52.143Z info: Request to orderRoutes.js has exited
+2025-07-28T13:33:52.146Z info: Server running on http://localhost:5002
+2025-07-28T13:33:54.774Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-28T13:33:56.378Z info: Request to authMiddleware.authorize has entered
+2025-07-28T13:33:56.379Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo"}
+2025-07-28T13:33:56.379Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo
+2025-07-28T13:33:56.383Z info: Token is verified
+2025-07-28T13:33:56.384Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753708491,"exp":1753712091}
+2025-07-28T13:33:56.520Z info: Request to authMiddleware.authorize has exited
+2025-07-28T13:33:56.521Z info: Request to addTrack has entered
+2025-07-28T13:33:56.521Z info: Checking if order exists
+2025-07-28T13:33:56.637Z info: Order exists
+2025-07-28T13:33:56.637Z info: Checking if user is a delivery Admin
+2025-07-28T13:33:56.638Z info: User is a delivery Admin
+2025-07-28T13:33:56.638Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-28T13:33:56.746Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:33:56.755Z info: POST /order/addTrack 400 373.601 ms
+2025-07-28T13:35:56.293Z info: Request to authMiddleware.authorize has entered
+2025-07-28T13:35:56.295Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo"}
+2025-07-28T13:35:56.295Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo
+2025-07-28T13:35:56.299Z info: Token is verified
+2025-07-28T13:35:56.300Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753708491,"exp":1753712091}
+2025-07-28T13:35:56.427Z info: Request to authMiddleware.authorize has exited
+2025-07-28T13:35:56.428Z info: Request to addTrack has entered
+2025-07-28T13:35:56.428Z info: Checking if order exists
+2025-07-28T13:35:56.528Z info: Order exists
+2025-07-28T13:35:56.528Z info: Checking if user is a delivery Admin
+2025-07-28T13:35:56.528Z info: User is a delivery Admin
+2025-07-28T13:35:56.529Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-28T13:35:56.637Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:35:56.640Z info: POST /order/addTrack 400 346.669 ms
+2025-07-28T13:42:35.350Z info: Request to authRoutes has entered
+2025-07-28T13:42:35.352Z info: Request to authRoutes has exited
+2025-07-28T13:42:35.460Z info: Request to productRoutes.js has entered
+2025-07-28T13:42:35.464Z info: Request to productRoutes.js has exited
+2025-07-28T13:42:35.466Z info: Request to orderRoutes.js has entered
+2025-07-28T13:42:35.494Z info: Request to orderRoutes.js has exited
+2025-07-28T13:42:35.498Z info: Server running on http://localhost:5002
+2025-07-28T13:42:38.585Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-28T13:42:44.002Z info: Request to authMiddleware.authorize has entered
+2025-07-28T13:42:44.002Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo"}
+2025-07-28T13:42:44.002Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo
+2025-07-28T13:42:44.005Z info: Token is verified
+2025-07-28T13:42:44.006Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753708491,"exp":1753712091}
+2025-07-28T13:42:44.139Z info: Request to authMiddleware.authorize has exited
+2025-07-28T13:42:44.139Z info: Request to addTrack has entered
+2025-07-28T13:42:44.140Z info: Checking if order exists
+2025-07-28T13:42:44.253Z info: Order exists
+2025-07-28T13:42:44.253Z info: Checking if user is a delivery Admin
+2025-07-28T13:42:44.254Z info: User is a delivery Admin
+2025-07-28T13:42:44.255Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-28T13:42:45.808Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:42:45.817Z info: POST /order/addTrack 400 1810.867 ms
+2025-07-28T13:58:04.863Z info: Request to authRoutes has entered
+2025-07-28T13:58:04.893Z info: Request to authRoutes has exited
+2025-07-28T13:58:05.028Z info: Request to productRoutes.js has entered
+2025-07-28T13:58:05.028Z info: Request to productRoutes.js has exited
+2025-07-28T13:58:05.030Z info: Request to orderRoutes.js has entered
+2025-07-28T13:58:05.053Z info: Request to orderRoutes.js has exited
+2025-07-28T13:58:05.059Z info: Server running on http://localhost:5002
+2025-07-28T13:58:07.784Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net
+2025-07-28T13:58:15.887Z info: Request to authMiddleware.authorize has entered
+2025-07-28T13:58:15.887Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo"}
+2025-07-28T13:58:15.887Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcwODQ5MSwiZXhwIjoxNzUzNzEyMDkxfQ.yvhkFDCogQMJN8L93nMjDlniAllniZuAb4fZDYR7IRo
+2025-07-28T13:58:15.890Z info: Token is verified
+2025-07-28T13:58:15.891Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753708491,"exp":1753712091}
+2025-07-28T13:58:16.701Z info: Request to authMiddleware.authorize has exited
+2025-07-28T13:58:16.702Z info: Request to addTrack has entered
+2025-07-28T13:58:16.703Z info: Checking if order exists
+2025-07-28T13:58:17.030Z info: Order exists
+2025-07-28T13:58:17.031Z info: Checking if user is a delivery Admin
+2025-07-28T13:58:17.031Z info: User is a delivery Admin
+2025-07-28T13:58:17.031Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-28T13:58:17.141Z error: Order does note exists in the delivery admin's queue
+2025-07-28T13:58:17.146Z info: POST /order/addTrack 400 1257.266 ms
+2025-07-28T14:01:31.683Z info: POST /auth/login 400 728.035 ms
+2025-07-28T14:01:53.590Z info: POST /auth/login 200 224.650 ms
+2025-07-28T14:02:07.140Z info: Request to authMiddleware.authorize has entered
+2025-07-28T14:02:07.141Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcxMTMxMywiZXhwIjoxNzUzNzE0OTEzfQ.Blf6sEsm-xUEIfVoSjMT812PfoWKx4E9eEkWN8R-Sa4"}
+2025-07-28T14:02:07.141Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcxMTMxMywiZXhwIjoxNzUzNzE0OTEzfQ.Blf6sEsm-xUEIfVoSjMT812PfoWKx4E9eEkWN8R-Sa4
+2025-07-28T14:02:07.143Z info: Token is verified
+2025-07-28T14:02:07.143Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753711313,"exp":1753714913}
+2025-07-28T14:02:07.352Z info: Request to authMiddleware.authorize has exited
+2025-07-28T14:02:07.353Z info: Request to addOrder has entered
+2025-07-28T14:02:07.353Z error: Product ID and quantity are required
+2025-07-28T14:02:07.355Z info: POST /order/addOrder 400 214.189 ms
+2025-07-28T14:04:05.933Z info: Request to authMiddleware.authorize has entered
+2025-07-28T14:04:05.933Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcxMTMxMywiZXhwIjoxNzUzNzE0OTEzfQ.Blf6sEsm-xUEIfVoSjMT812PfoWKx4E9eEkWN8R-Sa4"}
+2025-07-28T14:04:05.933Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcxMTMxMywiZXhwIjoxNzUzNzE0OTEzfQ.Blf6sEsm-xUEIfVoSjMT812PfoWKx4E9eEkWN8R-Sa4
+2025-07-28T14:04:05.934Z info: Token is verified
+2025-07-28T14:04:05.935Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753711313,"exp":1753714913}
+2025-07-28T14:04:06.262Z info: Request to authMiddleware.authorize has exited
+2025-07-28T14:04:06.263Z info: Request to addOrder has entered
+2025-07-28T14:04:06.263Z info: Checking if product exists
+2025-07-28T14:04:06.381Z info: Product exists
+2025-07-28T14:04:06.382Z info: Checking if user is a buyer
+2025-07-28T14:04:06.382Z info: User is a buyer
+2025-07-28T14:04:06.383Z info: Adding order to database with pending status
+2025-07-28T14:04:07.145Z info: Delivery Admin ID from product: 6884ddba7d8c58a44b9143ab
+2025-07-28T14:04:07.462Z info: Order added successfully
+2025-07-28T14:04:07.462Z info: Updating Delivery admin's order entries
+2025-07-28T14:04:07.946Z info: Order request made to delivery Admin successfully
+2025-07-28T14:04:07.948Z info: POST /order/addOrder 201 2012.147 ms
+2025-07-28T14:15:18.518Z info: Request to authRoutes has entered
+2025-07-28T14:15:18.520Z info: Request to authRoutes has exited
+2025-07-28T14:15:18.631Z info: Request to productRoutes.js has entered
+2025-07-28T14:15:18.632Z info: Request to productRoutes.js has exited
+2025-07-28T14:15:18.632Z info: Request to orderRoutes.js has entered
+2025-07-28T14:15:18.648Z info: Request to orderRoutes.js has exited
+2025-07-28T14:15:18.651Z info: Server running on http://localhost:5002
+2025-07-28T14:15:29.510Z info: Request to authMiddleware.authorize has entered
+2025-07-28T14:15:29.511Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcxMTMxMywiZXhwIjoxNzUzNzE0OTEzfQ.Blf6sEsm-xUEIfVoSjMT812PfoWKx4E9eEkWN8R-Sa4"}
+2025-07-28T14:15:29.514Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcxMTMxMywiZXhwIjoxNzUzNzE0OTEzfQ.Blf6sEsm-xUEIfVoSjMT812PfoWKx4E9eEkWN8R-Sa4
+2025-07-28T14:15:29.549Z info: Token is verified
+2025-07-28T14:15:29.551Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753711313,"exp":1753714913}
+2025-07-28T14:15:31.878Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-28T14:15:32.098Z info: Request to authMiddleware.authorize has exited
+2025-07-28T14:15:32.099Z info: Request to addOrder has entered
+2025-07-28T14:15:32.100Z info: Checking if product exists
+2025-07-28T14:15:33.002Z info: Product exists
+2025-07-28T14:15:33.003Z info: Checking if user is a buyer
+2025-07-28T14:15:33.005Z info: User is a buyer
+2025-07-28T14:15:33.005Z info: Adding order to database with pending status
+2025-07-28T14:15:34.229Z info: Order added successfully
+2025-07-28T14:15:34.230Z info: Updating Delivery admin's order entries
+2025-07-28T14:15:35.374Z info: Current queue length: 1
+2025-07-28T14:15:35.377Z info: After push, new length: 2
+2025-07-28T14:15:35.559Z info: Delivery admin saved successfully
+2025-07-28T14:15:35.560Z info: Order request made to delivery Admin successfully
+2025-07-28T14:15:35.573Z info: POST /order/addOrder 201 6058.056 ms
+2025-07-28T18:09:07.920Z info: Request to authRoutes has entered
+2025-07-28T18:09:07.923Z info: Request to authRoutes has exited
+2025-07-28T18:09:08.042Z info: Request to productRoutes.js has entered
+2025-07-28T18:09:08.042Z info: Request to productRoutes.js has exited
+2025-07-28T18:09:08.043Z info: Request to orderRoutes.js has entered
+2025-07-28T18:09:08.058Z info: Request to orderRoutes.js has exited
+2025-07-28T18:09:08.062Z info: Server running on http://localhost:5002
+2025-07-28T18:09:10.487Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net
+2025-07-28T18:15:59.227Z info: POST /order/adddTrack 404 17.688 ms
+2025-07-28T18:16:22.778Z info: Request to authMiddleware.authorize has entered
+2025-07-28T18:16:22.782Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcxMTMxMywiZXhwIjoxNzUzNzE0OTEzfQ.Blf6sEsm-xUEIfVoSjMT812PfoWKx4E9eEkWN8R-Sa4"}
+2025-07-28T18:16:22.782Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcxMTMxMywiZXhwIjoxNzUzNzE0OTEzfQ.Blf6sEsm-xUEIfVoSjMT812PfoWKx4E9eEkWN8R-Sa4
+2025-07-28T18:16:22.850Z info: POST /order/addTrack 500 71.149 ms
+2025-07-28T18:18:00.393Z info: POST /auth/login 400 356.359 ms
+2025-07-28T18:18:08.390Z info: POST /auth/login 200 307.466 ms
+2025-07-28T18:18:41.311Z info: Request to authMiddleware.authorize has entered
+2025-07-28T18:18:41.312Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcyNjY4OCwiZXhwIjoxNzUzNzMwMjg4fQ.GK9yVorJOD12wJVOuXlo5SdGH5ZQfL2T_9zCRF4HH-4"}
+2025-07-28T18:18:41.312Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzcyNjY4OCwiZXhwIjoxNzUzNzMwMjg4fQ.GK9yVorJOD12wJVOuXlo5SdGH5ZQfL2T_9zCRF4HH-4
+2025-07-28T18:18:41.314Z info: Token is verified
+2025-07-28T18:18:41.315Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753726688,"exp":1753730288}
+2025-07-28T18:18:41.671Z info: Request to authMiddleware.authorize has exited
+2025-07-28T18:18:41.675Z info: Request to addTrack has entered
+2025-07-28T18:18:41.677Z info: Checking if order exists
+2025-07-28T18:18:42.021Z info: Order exists
+2025-07-28T18:18:42.022Z info: Checking if user is a delivery Admin
+2025-07-28T18:18:42.023Z error: Only delivery Admin can add track
+2025-07-28T18:18:42.026Z info: POST /order/addTrack 403 713.690 ms
+2025-07-28T18:19:52.451Z info: Request to authMiddleware.authorize has entered
+2025-07-28T18:19:52.452Z info: cookies: {}
+2025-07-28T18:19:52.454Z info: POST /order/addTrack 401 1.942 ms
+2025-07-28T18:20:04.965Z info: POST /auth/login 200 482.928 ms
+2025-07-28T18:20:27.697Z info: Request to authMiddleware.authorize has entered
+2025-07-28T18:20:27.697Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcyNjgwNCwiZXhwIjoxNzUzNzMwNDA0fQ.sq1jFbO4n6C8B0bHC2wkVYcNxsDjCLBW4Jn_Zqy9GW4"}
+2025-07-28T18:20:27.698Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcyNjgwNCwiZXhwIjoxNzUzNzMwNDA0fQ.sq1jFbO4n6C8B0bHC2wkVYcNxsDjCLBW4Jn_Zqy9GW4
+2025-07-28T18:20:27.700Z info: Token is verified
+2025-07-28T18:20:27.700Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753726804,"exp":1753730404}
+2025-07-28T18:20:27.999Z info: Request to authMiddleware.authorize has exited
+2025-07-28T18:20:28.000Z info: Request to addTrack has entered
+2025-07-28T18:20:28.001Z info: Checking if order exists
+2025-07-28T18:20:28.380Z info: Order exists
+2025-07-28T18:20:28.380Z info: Checking if user is a delivery Admin
+2025-07-28T18:20:28.382Z info: User is a delivery Admin
+2025-07-28T18:20:28.383Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-28T18:20:28.384Z info: Logged-in delivery admin ID: 6884ddba7d8c58a44b9143ab
+2025-07-28T18:20:28.385Z info: Order's delivery admin ID: 6884ddba7d8c58a44b9143ab
+2025-07-28T18:20:28.587Z info: Order does exist in the delivery admin's queue
+2025-07-28T18:20:28.587Z info: Adding track to order
+2025-07-28T18:20:28.614Z info: Seller added to track
+2025-07-28T18:20:28.616Z info: Adding middlemen to track
+2025-07-28T18:20:28.621Z info: Middlemen added to track
+2025-07-28T18:20:28.622Z info: Adding buyer to track
+2025-07-28T18:20:28.624Z info: Buyer added to track
+2025-07-28T18:20:28.995Z info: Track added successfully
+2025-07-28T18:20:28.996Z info: Updating user's order entries
+2025-07-28T18:20:29.404Z info: Seller's order entry updated
+2025-07-28T18:20:29.916Z info: Buyer's order entry updated
+2025-07-28T18:20:30.242Z info: Middleman's order entry updated for user 68877617b229f24a003b80ee
+2025-07-28T18:20:30.632Z info: Middleman's order entry updated for user 68877723b229f24a003b80f3
+2025-07-28T18:20:30.633Z info: Changing the order status to accepted
+2025-07-28T18:20:30.838Z info: Order status changed to accepted
+2025-07-28T18:20:30.838Z info: Removing order from delivery admin's product request queue
+2025-07-28T18:20:31.046Z info: Order removed from delivery admin's product request queue
+2025-07-28T18:20:31.047Z info: Uploading the track on web3
+2025-07-28T18:20:35.171Z info: Track uploaded on web3
+2025-07-28T18:20:35.343Z info: Track uploaded on web3 and order updated
+2025-07-28T18:20:35.345Z info: Request to addTrack has exited
+2025-07-28T18:20:35.348Z info: POST /order/addTrack 200 7650.952 ms
+2025-07-28T18:24:42.366Z info: Request to authMiddleware.authorize has entered
+2025-07-28T18:24:42.368Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcyNjgwNCwiZXhwIjoxNzUzNzMwNDA0fQ.sq1jFbO4n6C8B0bHC2wkVYcNxsDjCLBW4Jn_Zqy9GW4"}
+2025-07-28T18:24:42.368Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcyNjgwNCwiZXhwIjoxNzUzNzMwNDA0fQ.sq1jFbO4n6C8B0bHC2wkVYcNxsDjCLBW4Jn_Zqy9GW4
+2025-07-28T18:24:42.375Z info: Token is verified
+2025-07-28T18:24:42.376Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753726804,"exp":1753730404}
+2025-07-28T18:24:42.616Z info: Request to authMiddleware.authorize has exited
+2025-07-28T18:24:42.618Z info: Request to getOrders_in_queue has entered
+2025-07-28T18:24:42.618Z info: Checking if user is a delivery Admin
+2025-07-28T18:24:42.618Z info: User is a delivery Admin
+2025-07-28T18:24:42.619Z info: Getting orders in queue
+2025-07-28T18:24:42.950Z info: Orders in queue fetched successfully
+2025-07-28T18:24:42.953Z info: GET /order/orders_in_queue 200 586.838 ms
+2025-07-28T18:38:11.627Z info: Request to authMiddleware.authorize has entered
+2025-07-28T18:38:11.661Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcyNjgwNCwiZXhwIjoxNzUzNzMwNDA0fQ.sq1jFbO4n6C8B0bHC2wkVYcNxsDjCLBW4Jn_Zqy9GW4"}
+2025-07-28T18:38:11.662Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzcyNjgwNCwiZXhwIjoxNzUzNzMwNDA0fQ.sq1jFbO4n6C8B0bHC2wkVYcNxsDjCLBW4Jn_Zqy9GW4
+2025-07-28T18:38:11.751Z info: Token is verified
+2025-07-28T18:38:11.752Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753726804,"exp":1753730404}
+2025-07-28T18:38:12.137Z info: Request to authMiddleware.authorize has exited
+2025-07-28T18:38:12.168Z info: Request to getOrders_to_deliver has entered
+2025-07-28T18:38:12.169Z info: Getting orders to deliver
+2025-07-28T18:38:12.422Z info: Orders to deliver fetched successfully
+2025-07-28T18:38:12.422Z info: Request to getOrders_to_deliver has exited
+2025-07-28T18:38:12.439Z info: GET /order/orders_to_deliver 200 816.196 ms
+2025-07-28T18:53:26.569Z info: POST /auth/login 200 534.332 ms
+2025-07-28T18:56:20.429Z info: Request to authMiddleware.authorize has entered
+2025-07-28T18:56:20.431Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzcyODgwNiwiZXhwIjoxNzUzNzMyNDA2fQ.hj5sy-2VrixgF4t0jpgb2KsLqZOXmB3BCCRBiFZj83w"}
+2025-07-28T18:56:20.432Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzcyODgwNiwiZXhwIjoxNzUzNzMyNDA2fQ.hj5sy-2VrixgF4t0jpgb2KsLqZOXmB3BCCRBiFZj83w
+2025-07-28T18:56:20.443Z info: Token is verified
+2025-07-28T18:56:20.444Z info: decoded: {"id":"6884c0976d02d1cd26b2fd49","iat":1753728806,"exp":1753732406}
+2025-07-28T18:56:20.638Z info: Request to authMiddleware.authorize has exited
+2025-07-28T18:56:20.705Z info: Request to verifyTransaction has entered
+2025-07-28T18:56:20.705Z info: Checking if order exists
+2025-07-28T18:56:21.151Z info: Order exists
+2025-07-28T18:56:21.152Z info: Verifying transaction and updating statuses
+2025-07-28T18:56:21.152Z info: Checking if user is the current owner of the order
+2025-07-28T18:56:21.155Z error: Current owner not found or is the last owner in the track
+2025-07-28T18:56:21.160Z info: POST /order/verifyTransaction 400 727.762 ms
+2025-07-28T19:09:36.252Z info: Request to authRoutes has entered
+2025-07-28T19:09:36.255Z info: Request to authRoutes has exited
+2025-07-28T19:09:36.408Z info: Request to productRoutes.js has entered
+2025-07-28T19:09:36.408Z info: Request to productRoutes.js has exited
+2025-07-28T19:09:36.409Z info: Request to orderRoutes.js has entered
+2025-07-28T19:09:36.430Z info: Request to orderRoutes.js has exited
+2025-07-28T19:09:36.433Z info: Server running on http://localhost:5002
+2025-07-28T19:09:40.280Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-28T19:09:48.443Z info: Request to authMiddleware.authorize has entered
+2025-07-28T19:09:48.444Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzcyODgwNiwiZXhwIjoxNzUzNzMyNDA2fQ.hj5sy-2VrixgF4t0jpgb2KsLqZOXmB3BCCRBiFZj83w"}
+2025-07-28T19:09:48.444Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRjMDk3NmQwMmQxY2QyNmIyZmQ0OSIsImlhdCI6MTc1MzcyODgwNiwiZXhwIjoxNzUzNzMyNDA2fQ.hj5sy-2VrixgF4t0jpgb2KsLqZOXmB3BCCRBiFZj83w
+2025-07-28T19:09:48.448Z info: Token is verified
+2025-07-28T19:09:48.448Z info: decoded: {"id":"6884c0976d02d1cd26b2fd49","iat":1753728806,"exp":1753732406}
+2025-07-28T19:09:48.843Z info: Request to authMiddleware.authorize has exited
+2025-07-28T19:09:48.845Z info: Request to verifyTransaction has entered
+2025-07-28T19:09:48.845Z info: Checking if order exists
+2025-07-28T19:09:49.080Z info: Order exists
+2025-07-28T19:09:49.081Z info: Verifying transaction and updating statuses
+2025-07-28T19:09:49.082Z info: Checking if user is the current owner of the order
+2025-07-28T19:09:49.084Z error: Current owner not found or is the last owner in the track
+2025-07-28T19:09:49.101Z info: POST /order/verifyTransaction 400 648.742 ms
+2025-07-28T19:28:12.769Z info: POST /auth/login 200 408.130 ms
+2025-07-28T19:30:14.717Z info: Request to authRoutes has entered
+2025-07-28T19:30:14.719Z info: Request to authRoutes has exited
+2025-07-28T19:30:14.826Z info: Request to productRoutes.js has entered
+2025-07-28T19:30:14.827Z info: Request to productRoutes.js has exited
+2025-07-28T19:30:14.828Z info: Request to orderRoutes.js has entered
+2025-07-28T19:30:14.845Z info: Request to orderRoutes.js has exited
+2025-07-28T19:30:14.848Z info: Server running on http://localhost:5002
+2025-07-28T19:30:16.807Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-28T19:30:20.481Z info: Request to authMiddleware.authorize has entered
+2025-07-28T19:30:20.481Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzczMDg5MiwiZXhwIjoxNzUzNzM0NDkyfQ._PDKveItN2CMfM0-Cf_TQVu82n_g96bFn_7KJczQZy0"}
+2025-07-28T19:30:20.482Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkZGJhN2Q4YzU4YTQ0YjkxNDNhYiIsImlhdCI6MTc1MzczMDg5MiwiZXhwIjoxNzUzNzM0NDkyfQ._PDKveItN2CMfM0-Cf_TQVu82n_g96bFn_7KJczQZy0
+2025-07-28T19:30:20.484Z info: Token is verified
+2025-07-28T19:30:20.484Z info: decoded: {"id":"6884ddba7d8c58a44b9143ab","iat":1753730892,"exp":1753734492}
+2025-07-28T19:30:20.753Z info: Request to authMiddleware.authorize has exited
+2025-07-28T19:30:20.754Z info: Request to addTrack has entered
+2025-07-28T19:30:20.754Z info: Checking if order exists
+2025-07-28T19:30:21.027Z info: Order exists
+2025-07-28T19:30:21.028Z info: Checking if user is a delivery Admin
+2025-07-28T19:30:21.029Z info: User is a delivery Admin
+2025-07-28T19:30:21.030Z info: Checking if order exists in the queue of the current delivery owner
+2025-07-28T19:30:21.031Z info: Logged-in delivery admin ID: 6884ddba7d8c58a44b9143ab
+2025-07-28T19:30:21.031Z info: Order's delivery admin ID: 6884ddba7d8c58a44b9143ab
+2025-07-28T19:30:21.277Z info: Order does exist in the delivery admin's queue
+2025-07-28T19:30:21.277Z info: Adding track to order
+2025-07-28T19:30:21.281Z info: Seller added to track
+2025-07-28T19:30:21.281Z info: Adding middlemen to track
+2025-07-28T19:30:21.282Z info: Middlemen added to track
+2025-07-28T19:30:21.283Z info: Adding buyer to track
+2025-07-28T19:30:21.283Z info: Buyer added to track
+2025-07-28T19:30:21.517Z info: Track added successfully
+2025-07-28T19:30:21.518Z info: Updating user's order entries
+2025-07-28T19:30:21.855Z info: Seller's order entry updated
+2025-07-28T19:30:22.192Z info: Buyer's order entry updated
+2025-07-28T19:30:22.396Z info: Middleman's order entry updated for user 68877617b229f24a003b80ee
+2025-07-28T19:30:22.573Z info: Middleman's order entry updated for user 68877723b229f24a003b80f3
+2025-07-28T19:30:22.575Z info: Changing the order status to accepted
+2025-07-28T19:30:22.730Z info: Order status changed to accepted
+2025-07-28T19:30:22.732Z info: Removing order from delivery admin's product request queue
+2025-07-28T19:30:22.832Z info: Order removed from delivery admin's product request queue
+2025-07-28T19:30:22.833Z info: Uploading the track on web3
+2025-07-28T19:30:26.256Z info: Track uploaded on web3
+2025-07-28T19:30:26.672Z info: Track uploaded on web3 and order updated
+2025-07-28T19:30:26.672Z info: Request to addTrack has exited
+2025-07-28T19:30:26.679Z info: POST /order/addTrack 200 6196.024 ms
+2025-07-28T19:37:53.347Z info: POST /auth/login 200 312.268 ms
+2025-07-28T19:38:52.919Z info: Request to authMiddleware.authorize has entered
+2025-07-28T19:38:52.920Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczMTQ3MywiZXhwIjoxNzUzNzM1MDczfQ.tas2DVREk6nvotSvyZ53cHj_aReWFC-9D-MXabZvYds"}
+2025-07-28T19:38:52.921Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczMTQ3MywiZXhwIjoxNzUzNzM1MDczfQ.tas2DVREk6nvotSvyZ53cHj_aReWFC-9D-MXabZvYds
+2025-07-28T19:38:52.923Z info: Token is verified
+2025-07-28T19:38:52.923Z info: decoded: {"id":"68877617b229f24a003b80ee","iat":1753731473,"exp":1753735073}
+2025-07-28T19:38:53.024Z info: Request to authMiddleware.authorize has exited
+2025-07-28T19:38:53.031Z info: Request to verifyTransaction has entered
+2025-07-28T19:38:53.032Z info: Checking if order exists
+2025-07-28T19:38:53.148Z info: Order exists
+2025-07-28T19:38:53.149Z info: Verifying transaction and updating statuses
+2025-07-28T19:38:53.151Z info: Checking if user is the current owner of the order
+2025-07-28T19:38:53.154Z info: Current owner found
+2025-07-28T19:38:53.154Z info: Getting the next owner in the track
+2025-07-28T19:38:53.156Z info: Next owner is 68877617b229f24a003b80ee
+2025-07-28T19:38:53.156Z info: Updating the give_status of the current owner
+2025-07-28T19:38:53.158Z info: Updating the recieve_status of the next owner
+2025-07-28T19:38:53.158Z info: Updating the current owner of the order
+2025-07-28T19:38:53.291Z info: Transaction verified successfully
+2025-07-28T19:38:53.293Z info: Updating the user's order entries
+2025-07-28T19:38:53.294Z info: Getting the current owner and the next owner
+2025-07-28T19:38:53.470Z info: Updating the current owner's order entry
+2025-07-28T19:38:53.560Z info: Current owner's order entry updated
+2025-07-28T19:38:53.561Z info: Updating the next owner's order entry
+2025-07-28T19:38:53.650Z info: Next owner's order entry updated
+2025-07-28T19:38:53.651Z info: Transaction verified and statuses updated successfully
+2025-07-28T19:38:53.652Z info: Uploading new details on web3
+2025-07-28T19:38:57.239Z info: Track uploaded on web3
+2025-07-28T19:38:57.335Z info: Track uploaded on web3 and order updated
+2025-07-28T19:38:57.336Z info: Checking if all statuses are true
+2025-07-28T19:38:57.337Z info: Request to verifyTransaction has exited
+2025-07-28T19:38:57.339Z info: POST /order/verifyTransaction 200 4420.339 ms
+2025-07-28T19:43:38.094Z info: Request to authMiddleware.authorize has entered
+2025-07-28T19:43:38.095Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczMTQ3MywiZXhwIjoxNzUzNzM1MDczfQ.tas2DVREk6nvotSvyZ53cHj_aReWFC-9D-MXabZvYds"}
+2025-07-28T19:43:38.095Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczMTQ3MywiZXhwIjoxNzUzNzM1MDczfQ.tas2DVREk6nvotSvyZ53cHj_aReWFC-9D-MXabZvYds
+2025-07-28T19:43:38.098Z info: Token is verified
+2025-07-28T19:43:38.098Z info: decoded: {"id":"68877617b229f24a003b80ee","iat":1753731473,"exp":1753735073}
+2025-07-28T19:43:38.193Z info: Request to authMiddleware.authorize has exited
+2025-07-28T19:43:38.193Z info: Request to getTrack has entered
+2025-07-28T19:43:38.278Z info: Track fetched successfully
+2025-07-28T19:43:38.280Z info: POST /order/getTrack 200 185.769 ms
+2025-07-28T19:46:41.291Z info: Request to authRoutes has entered
+2025-07-28T19:46:41.293Z info: Request to authRoutes has exited
+2025-07-28T19:46:41.392Z info: Request to productRoutes.js has entered
+2025-07-28T19:46:41.393Z info: Request to productRoutes.js has exited
+2025-07-28T19:46:41.394Z info: Request to orderRoutes.js has entered
+2025-07-28T19:46:41.409Z info: Request to orderRoutes.js has exited
+2025-07-28T19:46:41.412Z info: Server running on http://localhost:5002
+2025-07-28T19:46:44.200Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-28T19:51:59.613Z info: Request to authRoutes has entered
+2025-07-28T19:51:59.616Z info: Request to authRoutes has exited
+2025-07-28T19:51:59.712Z info: Request to productRoutes.js has entered
+2025-07-28T19:51:59.712Z info: Request to productRoutes.js has exited
+2025-07-28T19:51:59.713Z info: Request to orderRoutes.js has entered
+2025-07-28T19:51:59.725Z info: Request to orderRoutes.js has exited
+2025-07-28T19:51:59.728Z info: Server running on http://localhost:5002
+2025-07-28T19:52:01.237Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-28T19:52:56.727Z info: POST /auth/login 200 243.869 ms
+2025-07-28T19:53:17.685Z info: Request to authRoutes has entered
+2025-07-28T19:53:17.687Z info: Request to authRoutes has exited
+2025-07-28T19:53:17.783Z info: Request to productRoutes.js has entered
+2025-07-28T19:53:17.784Z info: Request to productRoutes.js has exited
+2025-07-28T19:53:17.785Z info: Request to orderRoutes.js has entered
+2025-07-28T19:53:17.800Z info: Request to orderRoutes.js has exited
+2025-07-28T19:53:17.802Z info: Server running on http://localhost:5002
+2025-07-28T19:53:20.431Z info: Request to authRoutes has entered
+2025-07-28T19:53:20.448Z info: Request to authRoutes has exited
+2025-07-28T19:53:20.538Z info: Request to productRoutes.js has entered
+2025-07-28T19:53:20.539Z info: Request to productRoutes.js has exited
+2025-07-28T19:53:20.539Z info: Request to orderRoutes.js has entered
+2025-07-28T19:53:20.553Z info: Request to orderRoutes.js has exited
+2025-07-28T19:53:20.557Z info: Server running on http://localhost:5002
+2025-07-28T19:53:22.239Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-28T19:55:18.948Z info: POST /order/getOrderById 404 2.143 ms
+2025-07-28T19:55:25.505Z info: Request to authMiddleware.authorize has entered
+2025-07-28T19:55:25.505Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T19:55:25.506Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T19:55:25.510Z info: Token is verified
+2025-07-28T19:55:25.510Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T19:55:25.851Z info: Request to authMiddleware.authorize has exited
+2025-07-28T19:55:26.200Z info: GET /order/getOrderById 404 695.247 ms
+2025-07-28T19:56:58.120Z info: Request to authMiddleware.authorize has entered
+2025-07-28T19:56:58.120Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T19:56:58.121Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T19:56:58.122Z info: Token is verified
+2025-07-28T19:56:58.123Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T19:56:58.433Z info: Request to authMiddleware.authorize has exited
+2025-07-28T19:56:58.523Z info: GET /order/getOrderById 404 402.406 ms
+2025-07-28T20:02:15.464Z info: Request to authRoutes has entered
+2025-07-28T20:02:15.466Z info: Request to authRoutes has exited
+2025-07-28T20:02:15.565Z info: Request to productRoutes.js has entered
+2025-07-28T20:02:15.565Z info: Request to productRoutes.js has exited
+2025-07-28T20:02:15.566Z info: Request to orderRoutes.js has entered
+2025-07-28T20:02:15.579Z info: Request to orderRoutes.js has exited
+2025-07-28T20:02:15.581Z info: Server running on http://localhost:5002
+2025-07-28T20:02:17.841Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-28T20:02:20.562Z info: Request to authMiddleware.authorize has entered
+2025-07-28T20:02:20.562Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T20:02:20.562Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T20:02:20.564Z info: Token is verified
+2025-07-28T20:02:20.564Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T20:02:20.885Z info: Request to authMiddleware.authorize has exited
+2025-07-28T20:02:20.998Z info: GET /order/getOrderById 404 435.507 ms
+2025-07-28T20:03:39.465Z info: Request to authRoutes has entered
+2025-07-28T20:03:39.467Z info: Request to authRoutes has exited
+2025-07-28T20:03:39.553Z info: Request to productRoutes.js has entered
+2025-07-28T20:03:39.553Z info: Request to productRoutes.js has exited
+2025-07-28T20:03:39.554Z info: Request to orderRoutes.js has entered
+2025-07-28T20:03:39.568Z info: Request to orderRoutes.js has exited
+2025-07-28T20:03:39.571Z info: Server running on http://localhost:5002
+2025-07-28T20:03:44.237Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-28T20:03:52.854Z info: Request to authMiddleware.authorize has entered
+2025-07-28T20:03:52.855Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T20:03:52.855Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T20:03:52.857Z info: Token is verified
+2025-07-28T20:03:52.857Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T20:03:53.165Z info: Request to authMiddleware.authorize has exited
+2025-07-28T20:03:53.277Z info: GET /order/getOrderById 404 421.848 ms
+2025-07-28T20:14:30.862Z info: Request to authRoutes has entered
+2025-07-28T20:14:30.864Z info: Request to authRoutes has exited
+2025-07-28T20:14:30.954Z info: Request to productRoutes.js has entered
+2025-07-28T20:14:30.955Z info: Request to productRoutes.js has exited
+2025-07-28T20:14:30.956Z info: Request to orderRoutes.js has entered
+2025-07-28T20:14:30.974Z info: Request to orderRoutes.js has exited
+2025-07-28T20:14:30.976Z info: Server running on http://localhost:5002
+2025-07-28T20:14:33.562Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net
+2025-07-28T20:14:51.745Z info: Request to authMiddleware.authorize has entered
+2025-07-28T20:14:51.746Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T20:14:51.746Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T20:14:51.750Z info: Token is verified
+2025-07-28T20:14:51.751Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T20:14:51.889Z info: Request to authMiddleware.authorize has exited
+2025-07-28T20:14:52.017Z info: GET /order/getOrderById/68878357e4159aadd89f9741 400 271.246 ms
+2025-07-28T20:15:01.862Z info: Request to authMiddleware.authorize has entered
+2025-07-28T20:15:01.862Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T20:15:01.862Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T20:15:01.864Z info: Token is verified
+2025-07-28T20:15:01.864Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T20:15:01.958Z info: Request to authMiddleware.authorize has exited
+2025-07-28T20:15:02.045Z info: GET /order/getOrderById/68878357e4159aadd89f9741 400 182.789 ms
+2025-07-28T20:15:36.460Z info: GET /order/getOrderById 404 1.265 ms
+2025-07-28T20:15:48.362Z info: GET /order/getOrderById 404 0.643 ms
+2025-07-28T20:18:04.160Z info: Request to authMiddleware.authorize has entered
+2025-07-28T20:18:04.160Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T20:18:04.161Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T20:18:04.162Z info: Token is verified
+2025-07-28T20:18:04.162Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T20:18:04.282Z info: Request to authMiddleware.authorize has exited
+2025-07-28T20:18:04.369Z info: GET /order/getOrderById/68878357e4159aadd89f9741 400 208.485 ms
+2025-07-28T20:22:20.650Z info: Request to authRoutes has entered
+2025-07-28T20:22:20.652Z info: Request to authRoutes has exited
+2025-07-28T20:22:20.741Z info: Request to productRoutes.js has entered
+2025-07-28T20:22:20.742Z info: Request to productRoutes.js has exited
+2025-07-28T20:22:20.743Z info: Request to orderRoutes.js has entered
+2025-07-28T20:22:20.756Z info: Request to orderRoutes.js has exited
+2025-07-28T20:22:20.759Z info: Server running on http://localhost:5002
+2025-07-28T20:22:22.649Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-07-28T20:22:23.850Z info: Request to authRoutes has entered
+2025-07-28T20:22:23.852Z info: Request to authRoutes has exited
+2025-07-28T20:22:23.935Z info: Request to productRoutes.js has entered
+2025-07-28T20:22:23.935Z info: Request to productRoutes.js has exited
+2025-07-28T20:22:23.936Z info: Request to orderRoutes.js has entered
+2025-07-28T20:22:23.950Z info: Request to orderRoutes.js has exited
+2025-07-28T20:22:23.952Z info: Server running on http://localhost:5002
+2025-07-28T20:22:26.740Z info: Request to authRoutes has entered
+2025-07-28T20:22:26.743Z info: Request to authRoutes has exited
+2025-07-28T20:22:26.856Z info: Request to productRoutes.js has entered
+2025-07-28T20:22:26.857Z info: Request to productRoutes.js has exited
+2025-07-28T20:22:26.857Z info: Request to orderRoutes.js has entered
+2025-07-28T20:22:26.874Z info: Request to orderRoutes.js has exited
+2025-07-28T20:22:26.878Z info: Server running on http://localhost:5002
+2025-07-28T20:22:28.325Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net
+2025-07-28T20:22:36.650Z info: Request to authRoutes has entered
+2025-07-28T20:22:36.653Z info: Request to authRoutes has exited
+2025-07-28T20:22:36.737Z info: Request to productRoutes.js has entered
+2025-07-28T20:22:36.738Z info: Request to productRoutes.js has exited
+2025-07-28T20:22:36.738Z info: Request to orderRoutes.js has entered
+2025-07-28T20:22:36.752Z info: Request to orderRoutes.js has exited
+2025-07-28T20:22:36.755Z info: Server running on http://localhost:5002
+2025-07-28T20:22:38.607Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-07-28T20:22:53.755Z info: Request to authMiddleware.authorize has entered
+2025-07-28T20:22:53.755Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T20:22:53.755Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T20:22:53.757Z info: Token is verified
+2025-07-28T20:22:53.758Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T20:22:53.856Z info: Request to authMiddleware.authorize has exited
+2025-07-28T20:22:53.985Z info: GET /order/getOrderById/68878357e4159aadd89f9741 200 223.931 ms
+2025-07-28T20:23:29.302Z info: Request to authMiddleware.authorize has entered
+2025-07-28T20:23:29.303Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T20:23:29.304Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T20:23:29.306Z info: Token is verified
+2025-07-28T20:23:29.307Z info: decoded: {"id":"6884d9d37d8c58a44b9143a7","iat":1753732376,"exp":1753735976}
+2025-07-28T20:23:29.412Z info: Request to authMiddleware.authorize has exited
+2025-07-28T20:23:29.528Z info: GET /order/getOrderById/68878357e4159aadd89f9741 200 225.649 ms
+2025-07-28T20:55:53.791Z info: Request to authMiddleware.authorize has entered
+2025-07-28T20:55:53.812Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE"}
+2025-07-28T20:55:53.812Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODRkOWQzN2Q4YzU4YTQ0YjkxNDNhNyIsImlhdCI6MTc1MzczMjM3NiwiZXhwIjoxNzUzNzM1OTc2fQ.4rsfZzjBEJ5kEkgXu9iToSyUtDosPhTWDp4RQ2GliYE
+2025-07-28T20:55:53.979Z info: POST /order/generateTransferOTP 500 196.345 ms
+2025-07-28T20:59:14.318Z info: POST /auth/login 200 1907.614 ms
+2025-07-28T21:00:09.150Z info: POST /order/getOrderTransactions 404 1.396 ms
+2025-07-28T21:00:50.587Z info: Request to authRoutes has entered
+2025-07-28T21:00:50.589Z info: Request to authRoutes has exited
+2025-07-28T21:00:50.720Z info: Request to productRoutes.js has entered
+2025-07-28T21:00:50.721Z info: Request to productRoutes.js has exited
+2025-07-28T21:00:50.721Z info: Request to orderRoutes.js has entered
+2025-07-28T21:00:50.741Z info: Request to orderRoutes.js has exited
+2025-07-28T21:00:50.744Z info: Server running on http://localhost:5002
+2025-07-28T21:00:54.737Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net
+2025-07-28T21:01:10.173Z info: POST /order/getOrderTransactions 404 2.891 ms
+2025-07-28T21:02:44.241Z info: Request to authMiddleware.authorize has entered
+2025-07-28T21:02:44.243Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc"}
+2025-07-28T21:02:44.243Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc
+2025-07-28T21:02:44.248Z info: Token is verified
+2025-07-28T21:02:44.251Z info: decoded: {"id":"68877617b229f24a003b80ee","iat":1753736354,"exp":1753739954}
+2025-07-28T21:02:44.388Z info: Request to authMiddleware.authorize has exited
+2025-07-28T21:02:44.863Z info: POST /order/generateTransferOTP 200 622.215 ms
+2025-07-28T21:05:12.716Z info: Request to authMiddleware.authorize has entered
+2025-07-28T21:05:12.717Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc"}
+2025-07-28T21:05:12.717Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc
+2025-07-28T21:05:12.721Z info: Token is verified
+2025-07-28T21:05:12.730Z info: decoded: {"id":"68877617b229f24a003b80ee","iat":1753736354,"exp":1753739954}
+2025-07-28T21:05:13.065Z info: Request to authMiddleware.authorize has exited
+2025-07-28T21:05:13.402Z info: POST /order/verifyTransferOTP 400 685.119 ms
+2025-07-28T21:05:37.841Z info: Request to authMiddleware.authorize has entered
+2025-07-28T21:05:37.842Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc"}
+2025-07-28T21:05:37.842Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc
+2025-07-28T21:05:37.846Z info: Token is verified
+2025-07-28T21:05:37.846Z info: decoded: {"id":"68877617b229f24a003b80ee","iat":1753736354,"exp":1753739954}
+2025-07-28T21:05:37.975Z info: Request to authMiddleware.authorize has exited
+2025-07-28T21:05:38.588Z info: POST /order/verifyTransferOTP 200 746.890 ms
+2025-07-28T21:05:49.415Z info: Request to authMiddleware.authorize has entered
+2025-07-28T21:05:49.416Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc"}
+2025-07-28T21:05:49.417Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc
+2025-07-28T21:05:49.420Z info: Token is verified
+2025-07-28T21:05:49.430Z info: decoded: {"id":"68877617b229f24a003b80ee","iat":1753736354,"exp":1753739954}
+2025-07-28T21:05:49.752Z info: Request to authMiddleware.authorize has exited
+2025-07-28T21:05:50.129Z info: POST /order/verifyTransferOTP 400 712.944 ms
+2025-07-28T21:05:56.497Z info: Request to authMiddleware.authorize has entered
+2025-07-28T21:05:56.498Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc"}
+2025-07-28T21:05:56.498Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc
+2025-07-28T21:05:56.500Z info: Token is verified
+2025-07-28T21:05:56.500Z info: decoded: {"id":"68877617b229f24a003b80ee","iat":1753736354,"exp":1753739954}
+2025-07-28T21:05:56.618Z info: Request to authMiddleware.authorize has exited
+2025-07-28T21:05:56.825Z info: POST /order/verifyTransferOTP 400 327.325 ms
+2025-07-28T21:06:03.594Z info: Request to authMiddleware.authorize has entered
+2025-07-28T21:06:03.594Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc"}
+2025-07-28T21:06:03.595Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NjE3YjIyOWYyNGEwMDNiODBlZSIsImlhdCI6MTc1MzczNjM1NCwiZXhwIjoxNzUzNzM5OTU0fQ.XVEh60lD6_AFP8K-g_xqDGc7Vl7hTRiLOvOmDl3WjHc
+2025-07-28T21:06:03.597Z info: Token is verified
+2025-07-28T21:06:03.598Z info: decoded: {"id":"68877617b229f24a003b80ee","iat":1753736354,"exp":1753739954}
+2025-07-28T21:06:03.692Z info: Request to authMiddleware.authorize has exited
+2025-07-28T21:06:04.092Z info: POST /order/verifyTransferOTP 200 498.474 ms
+2025-07-28T21:08:00.410Z info: POST /auth/login 200 493.006 ms
+2025-07-28T21:08:59.577Z info: Request to authMiddleware.authorize has entered
+2025-07-28T21:08:59.579Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NzIzYjIyOWYyNGEwMDNiODBmMyIsImlhdCI6MTc1MzczNjg4MCwiZXhwIjoxNzUzNzQwNDgwfQ.rNBjpcGdeCmMPOC6EL0LdUyZVNLZMO_5cmsLtugK8nc"}
+2025-07-28T21:08:59.580Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NzIzYjIyOWYyNGEwMDNiODBmMyIsImlhdCI6MTc1MzczNjg4MCwiZXhwIjoxNzUzNzQwNDgwfQ.rNBjpcGdeCmMPOC6EL0LdUyZVNLZMO_5cmsLtugK8nc
+2025-07-28T21:08:59.583Z info: Token is verified
+2025-07-28T21:08:59.591Z info: decoded: {"id":"68877723b229f24a003b80f3","iat":1753736880,"exp":1753740480}
+2025-07-28T21:08:59.906Z info: Request to authMiddleware.authorize has exited
+2025-07-28T21:09:00.624Z info: POST /order/verifyTransferOTP 200 1046.359 ms
+2025-07-28T21:13:05.150Z info: Request to authMiddleware.authorize has entered
+2025-07-28T21:13:05.150Z info: cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NzIzYjIyOWYyNGEwMDNiODBmMyIsImlhdCI6MTc1MzczNjg4MCwiZXhwIjoxNzUzNzQwNDgwfQ.rNBjpcGdeCmMPOC6EL0LdUyZVNLZMO_5cmsLtugK8nc"}
+2025-07-28T21:13:05.151Z info: Token is present: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODc3NzIzYjIyOWYyNGEwMDNiODBmMyIsImlhdCI6MTc1MzczNjg4MCwiZXhwIjoxNzUzNzQwNDgwfQ.rNBjpcGdeCmMPOC6EL0LdUyZVNLZMO_5cmsLtugK8nc
+2025-07-28T21:13:05.153Z info: Token is verified
+2025-07-28T21:13:05.153Z info: decoded: {"id":"68877723b229f24a003b80f3","iat":1753736880,"exp":1753740480}
+2025-07-28T21:13:05.368Z info: Request to authMiddleware.authorize has exited
+2025-07-28T21:13:05.559Z info: GET /order/transactions/6887860536097da19c884a1f 200 408.739 ms
+2025-07-28T21:14:54.071Z info: Request to authRoutes has entered
+2025-07-28T21:14:54.074Z info: Request to authRoutes has exited
+2025-07-28T21:14:54.211Z info: Request to productRoutes.js has entered
+2025-07-28T21:14:54.211Z info: Request to productRoutes.js has exited
+2025-07-28T21:14:54.212Z info: Request to orderRoutes.js has entered
+2025-07-28T21:14:54.238Z info: Request to orderRoutes.js has exited
+2025-07-28T21:14:54.246Z info: Server running on http://localhost:5002
+2025-07-28T21:14:56.267Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net
+2025-07-28T21:15:00.407Z info: Request to authRoutes has entered
+2025-07-28T21:15:00.409Z info: Request to authRoutes has exited
+2025-07-28T21:15:00.506Z info: Request to productRoutes.js has entered
+2025-07-28T21:15:00.507Z info: Request to productRoutes.js has exited
+2025-07-28T21:15:00.508Z info: Request to orderRoutes.js has entered
+2025-07-28T21:15:00.521Z info: Request to orderRoutes.js has exited
+2025-07-28T21:15:00.524Z info: Server running on http://localhost:5002
+2025-07-28T21:15:02.593Z info: MongoDB Connected: ac-msykbrh-shard-00-02.fulldyg.mongodb.net

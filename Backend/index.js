@@ -5,15 +5,18 @@ const cookieParser = require("cookie-parser");
 require("dotenv").config(); 
 
 const app = express();
-const port = process.env.PORT || 3000; 
+const port = process.env.PORT || 5002; 
 
 connectDB(); 
 
 app.use(express.json());
 app.use(cookieParser()); 
-app.use(requestsLogger);
+app.use(requestsLogger); 
+
+
 
 app.use("/", require("./route")); // route.js in root
+
 
 app.listen(port, () => {
   logger.info(`Server running on http://localhost:${port}`);

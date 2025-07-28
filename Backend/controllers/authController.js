@@ -13,11 +13,11 @@ const signup = asyncHandler(async (req, res) => {
   }
   if (await User.findOne({ username })) {
     return createResponse(res, 400, "Username already exists");
-  }  
+  }   
 
   const validCategories = ["Buyer", "Seller", "DeliveryAdmin", "Middleman"];
 if (!validCategories.includes(req.body.category)) {
-  return res.status(400).json({ message: "Invalid user category" });
+  return res.status(400).json({ message: "Invalid user category" });  
 }
    
 
