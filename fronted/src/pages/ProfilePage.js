@@ -2,7 +2,7 @@ import { useAuth } from '../context/AuthContext';
 import "../styles/ProfilePage.css";
 
 function ProfilePage() {
-  const { user } = useAuth();
+  const { user } = useAuth(); 
 
   if (!user) return <div className="loading">Loading...</div>;
 
@@ -36,4 +36,4 @@ function ProfilePage() {
   );
 }
 
-export default ProfilePage;
+export default ProfilePage; 

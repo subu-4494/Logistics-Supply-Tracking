@@ -66,6 +66,6 @@ const getProfile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user.id).select("-password");
   if (!user) return createResponse(res, 404, "User not found");
   return createResponse(res, 200, "Profile fetched", { user });
-});
+}); 
 
 module.exports = { signup, login, logout, getProfile };

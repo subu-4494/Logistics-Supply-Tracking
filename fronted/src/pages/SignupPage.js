@@ -4,7 +4,7 @@ import '../styles/AuthPage.css';
 import { useAuth } from '../context/AuthContext';
 
 function SignupPage() {
-  const { checkAuth } = useAuth();
+  const { checkAuth } = useAuth();  
   const [formData, setFormData] = useState({
     name: '',
     username: '',
@@ -12,11 +12,11 @@ function SignupPage() {
     password: '',
     city: '',
     category: 'Buyer'
-  });
+  }); 
 
   const navigate = useNavigate();
 
-  const cities = ['delhi', 'noida', 'bijnor'];
+  const cities = ['delhi', 'noida', 'bijnor','prayagraj','banglore','agartala']; 
   const categories = ['Buyer', 'Seller', 'Middleman', 'DeliveryAdmin'];
 
   const handleChange = (e) => {
@@ -29,7 +29,7 @@ function SignupPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/auth/signup', {
+       const response = await fetch('http://localhost:5002/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

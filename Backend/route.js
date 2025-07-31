@@ -11,6 +11,6 @@ router.get("/", (req, res) => {
 router.use("/auth", require("./routes/AuthRoutes")); 
 router.use("/product", require("./routes/productRoutes")); 
 router.use("/order", require("./routes/orderRoutes"));
-//router.use("/web3", require("./routes/web3Routes"));   
+router.use("/web3", require("./routes/web3Routes"));   
  
 module.exports = router;

@@ -24,3 +24,10 @@
 2025-07-28T18:18:42.023Z error: Only delivery Admin can add track
 2025-07-28T18:56:21.155Z error: Current owner not found or is the last owner in the track
 2025-07-28T19:09:49.084Z error: Current owner not found or is the last owner in the track
+2025-07-31T17:25:09.987Z error: Product ID and quantity are required
+2025-07-31T20:12:27.773Z error: Order does not exist in the delivery admin's queue
+2025-07-31T20:19:30.101Z error: Current owner not found or is the last owner in the track
+2025-07-31T20:19:30.248Z error: Current owner not found or is the last owner in the track
+2025-07-31T20:19:30.450Z error: Current owner not found or is the last owner in the track
+2025-07-31T20:20:57.809Z error: Current owner not found or is the last owner in the track
+2025-07-31T20:20:58.107Z error: Current owner not found or is the last owner in the track

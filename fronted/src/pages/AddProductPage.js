@@ -1,16 +1,18 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/AddProductPage.css';
+ 
 
-function AddProductPage() {
+function AddProductPage() { 
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     description: '',
     price: '',
     status: 'available',
+    quantityAvailable: '',
   });
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState(null); 
   const [loading, setLoading] = useState(false);
 
   const handleImageChange = (e) => {
@@ -37,11 +39,12 @@ function AddProductPage() {
       productFormData.append('description', formData.description);
       productFormData.append('price', formData.price);
       productFormData.append('status', formData.status);
+      productFormData.append('quantityAvailable', formData.quantityAvailable);
       if (image) {
         productFormData.append('image', image);
       }
 
-      const response = await fetch('http://localhost:3000/product/addProduct', {
+      const response = await fetch('http://localhost:5002/product/addProduct', {
         method: 'POST',
         credentials: 'include',
         body: productFormData
@@ -61,56 +64,35 @@ function AddProductPage() {
   return (
     <div className="add-product-container">
       <h2>Add New Product</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="add-product-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Product Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            required
-          />
+          <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
         </div>
         <div className="form-group">
           <label>Description</label>
-          <textarea
-            name="description"
-            value={formData.description}
-            onChange={handleInputChange}
-            required
-          />
+          <textarea name="description" value={formData.description} onChange={handleInputChange} required />
         </div>
         <div className="form-group">
-          <label>Price</label>
-          <input
-            type="number"
-            name="price"
-            value={formData.price}
-            onChange={handleInputChange}
-            required
-          />
+          <label>Price (₹)</label>
+          <input type="number" name="price" value={formData.price} onChange={handleInputChange} required />
         </div>
         <div className="form-group">
           <label>Status</label>
-          <select
-            name="status"
-            value={formData.status}
-            onChange={handleInputChange}
-          >
+          <select name="status" value={formData.status} onChange={handleInputChange}>
             <option value="available">Available</option>
             <option value="sold">Sold</option>
           </select>
         </div>
         <div className="form-group">
-          <label>Product Image</label>
-          <input 
-            type="file" 
-            accept="image/*"
-            onChange={handleImageChange}
-          />
+          <label>Quantity Available</label>
+          <input type="number" name="quantityAvailable" value={formData.quantityAvailable} onChange={handleInputChange} required />
         </div>
-        <button type="submit" disabled={loading}>
+        <div className="form-group">
+          <label>Product Image</label>
+          <input type="file" accept="image/*" onChange={handleImageChange} />
+        </div>
+        <button className="submit-btn" type="submit" disabled={loading}>
           {loading ? 'Adding Product...' : 'Add Product'}
         </button>
       </form>
@@ -118,4 +100,4 @@ function AddProductPage() {
   );
 }
 
-export default AddProductPage; 
+export default AddProductPage;

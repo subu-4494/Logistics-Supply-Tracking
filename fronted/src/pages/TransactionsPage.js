@@ -19,7 +19,7 @@ function TransactionsPage() {
 
   const handleVerifyOtp = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:3000/order/verifyTransferOTP', {
+      const response = await fetch('http://localhost:5002/order/verifyTransferOTP', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -51,7 +51,7 @@ function TransactionsPage() {
 
   const handleConfirmTransaction = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:3000/order/verifyTransaction', {
+      const response = await fetch('http://localhost:5002/order/verifyTransaction', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -79,7 +79,7 @@ function TransactionsPage() {
 
   const fetchTransactions = async () => {
     try {
-      const response = await fetch('http://localhost:3000/order/orders_to_deliver', {
+      const response = await fetch('http://localhost:5002/order/orders_to_deliver', {
         credentials: 'include'
       });
       const data = await response.json();

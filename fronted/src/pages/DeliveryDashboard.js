@@ -17,9 +17,9 @@ function DeliveryDashboard() {
     fetchMiddlemen();
   }, []);
 
-  const fetchOrderDetails = async (orderId) => {
+   const fetchOrderDetails = async (orderId) => {
     try {
-      const response = await fetch(`http://localhost:3000/order/${orderId}`, {
+      const response = await fetch(`http://localhost:5002/order/${orderId}`, {
         credentials: 'include'
       });
       const data = await response.json();
@@ -36,7 +36,7 @@ function DeliveryDashboard() {
 
   const fetchQueuedOrders = async () => {
     try {
-      const response = await fetch('http://localhost:3000/order/orders_in_queue', {
+      const response = await fetch('http://localhost:5002/order/orders_in_queue', {
         credentials: 'include'
       });
       const data = await response.json();
@@ -56,7 +56,7 @@ function DeliveryDashboard() {
 
   const fetchMiddlemen = async () => {
     try {
-      const response = await fetch('http://localhost:3000/order/getMiddlemen', {
+      const response = await fetch('http://localhost:5002/order/getMiddlemen', {
         credentials: 'include'
       });
       const data = await response.json();
@@ -87,7 +87,7 @@ function DeliveryDashboard() {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/order/addTrack', {
+      const response = await fetch('http://localhost:5002/order/addTrack', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

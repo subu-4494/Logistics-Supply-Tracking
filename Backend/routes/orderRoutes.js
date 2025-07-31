@@ -11,6 +11,15 @@ router.post(
      require("../controllers/orderController.js").addOrder
 ); 
 
+
+router.get('/my-orders',
+   authorize,  
+
+    require("../controllers/orderController.js").getUserRelatedOrders
+);   
+ 
+  
+
 router .post(
     "/addTrack",
     authorize,

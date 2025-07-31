@@ -6,8 +6,50 @@ const { logger } = require("../utils/logger");
 const { downloadFile, uploadFile } = require("../utils/PinataHandling");
 const { createResponse } = require("../utils/ResponseHandling"); 
 
-   
- 
+
+const getUserRelatedOrders = asyncHandler(async (req, res) => {
+  const userId = req.user._id.toString(); // Ensure string comparison
+
+  // Fetch all orders where user is involved
+  const orders = await Order.find({
+    $or: [
+      { buyer: userId },
+      { deliveryAdmin: userId },
+      { seller: userId },
+    ],
+  });
+
+  // Enrich each order with product details safely
+  const enrichedOrders = await Promise.all(
+    orders.map(async (order) => {
+      let product = null;
+      try {
+        // Safely extract the ID if it's an object
+        const productId = typeof order.product === 'string'
+          ? order.product
+          : order.product?._id?.toString();
+
+        if (productId) {
+          product = await Product.findById(productId);
+        }
+      } catch (err) {
+        console.warn(`Failed to fetch product for order ${order._id}:`, err.message);
+      }
+
+      return {
+        ...order.toObject(),
+        productDetails: product || null,
+      };
+    })
+  );
+
+  res.status(200).json({
+    success: true,
+    data: enrichedOrders,
+  });
+});
+
+
 
 const addOrder = asyncHandler(async (req, res) => {
   logger.info("Request to addOrder has entered");
@@ -602,7 +644,8 @@ const getOrderTransactions = asyncHandler(async (req, res) => {
 
 
 
-module.exports = {
+module.exports = { 
+  getUserRelatedOrders,
   addOrder,
   addTrack,
   orders_in_queue,

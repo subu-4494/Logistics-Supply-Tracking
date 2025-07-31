@@ -4,16 +4,17 @@ import '../styles/ProductsPage.css';
 import { Link } from 'react-router-dom';
 
 function ProductsPage() {
-  const { user } = useAuth();
-  const [products, setProducts] = useState([]);
+  const { user } = useAuth(); 
+  const [products, setProducts] = useState([]); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [orderStatus, setOrderStatus] = useState({ loading: false, error: null });
+  const [orderStatus, setOrderStatus] = useState({ loading: false, error: null }); 
 
+  // ✅ Moved this function before handleBuyProduct
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3000/product/getProducts', {
+      const response = await fetch('http://localhost:5002/product/getProducts', {
         credentials: 'include'
       });
       const data = await response.json();
@@ -30,14 +31,11 @@ function ProductsPage() {
     }
   };
 
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-
+  // ✅ This now correctly accesses fetchProducts
   const handleBuyProduct = async (productId) => {
     try {
       setOrderStatus({ loading: true, error: null });
-      const response = await fetch('http://localhost:3000/order/addOrder', {
+      const response = await fetch('http://localhost:5002/order/addOrder', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -52,7 +50,7 @@ function ProductsPage() {
       const data = await response.json();
       if (data.success) {
         alert('Order placed successfully!');
-        fetchProducts();
+        fetchProducts(); // ✅ No more error here
       } else {
         setOrderStatus({ loading: false, error: data.message });
       }
@@ -62,14 +60,18 @@ function ProductsPage() {
     }
   };
 
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
   if (loading) return <div className="loading">Loading products...</div>;
   if (error) return <div className="error">{error}</div>;
   if (!products.length) return <div className="no-products">No products found</div>;
 
   return (
     <div className="products-container">
-      <h2>{user.category === 'Seller' ? 'My Products' : 'Available Products'}</h2>
-      {user.category === 'Seller' && (
+      <h2>{user?.category === 'Seller' ? 'My Products' : 'Available Products'}</h2>
+      {user?.category === 'Seller' && (
         <Link to="/add-product" className="add-product-btn">Add New Product</Link>
       )}
       {orderStatus.error && (
@@ -83,7 +85,7 @@ function ProductsPage() {
               <h3>{product.name}</h3>
               <p>{product.description}</p>
               <p className="price">₹{product.price}</p>
-              {user.category === 'Buyer' && (
+              {user?.category === 'Buyer' && (
                 <button 
                   className="buy-button"
                   onClick={() => handleBuyProduct(product._id)}
@@ -100,4 +102,4 @@ function ProductsPage() {
   );
 }
 
-export default ProductsPage; 
+export default ProductsPage;
