@@ -7,50 +7,6 @@ const { downloadFile, uploadFile } = require("../utils/PinataHandling");
 const { createResponse } = require("../utils/ResponseHandling"); 
 
 
-const getUserRelatedOrders = asyncHandler(async (req, res) => {
-  const userId = req.user._id.toString(); // Ensure string comparison
-
-  // Fetch all orders where user is involved
-  const orders = await Order.find({
-    $or: [
-      { buyer: userId },
-      { deliveryAdmin: userId },
-      { seller: userId },
-    ],
-  });
-
-  // Enrich each order with product details safely
-  const enrichedOrders = await Promise.all(
-    orders.map(async (order) => {
-      let product = null;
-      try {
-        // Safely extract the ID if it's an object
-        const productId = typeof order.product === 'string'
-          ? order.product
-          : order.product?._id?.toString();
-
-        if (productId) {
-          product = await Product.findById(productId);
-        }
-      } catch (err) {
-        console.warn(`Failed to fetch product for order ${order._id}:`, err.message);
-      }
-
-      return {
-        ...order.toObject(),
-        productDetails: product || null,
-      };
-    })
-  );
-
-  res.status(200).json({
-    success: true,
-    data: enrichedOrders,
-  });
-});
-
-
-
 const addOrder = asyncHandler(async (req, res) => {
   logger.info("Request to addOrder has entered");
   const { productId, quantity } = req.body;
@@ -253,7 +209,12 @@ if (!deliveryAdmin.product_request_queue.includes(orderId)) {
     owner: track.owner,
     recieve_status: track.recieve_status,
     give_status: track.give_status,
-  }));  
+  }));   
+
+
+
+
+
 
   logger.info("Uploading the track on web3");    
   // Upload the track on web3
@@ -333,143 +294,119 @@ const orders_to_deliver = asyncHandler(async (req, res) => {
  
 
 // here we passed the product to the agents until it reached to the buyer and update the product_left array 
-
 const verifyTransaction = asyncHandler(async (req, res) => {
-  logger.info("Request to verifyTransaction has entered");
-  const { orderId } = req.body;   // got order id which i have to ship  
+  const { orderId } = req.body;
+
   if (!orderId) {
-    logger.error("Order ID is required");
-    return createResponse(res, 400, "Order ID is required", [], false); 
+    return createResponse(res, 400, "Order ID is required", [], false);
   }
 
-  logger.info("Checking if order exists");
   const order = await Order.findById(orderId);
   if (!order) {
-    logger.error("Order does not exist");
     return createResponse(res, 404, "Order does not exist", [], false);
   }
-  logger.info("Order exists");
 
-  logger.info("Verifying transaction and updating statuses");
-
-  logger.info("Checking if user is the current owner of the order"); 
-  const currentOwnerIndex = order.track.findIndex(   // both order.track and order.current_owner belongs t osame scope
+  const currentOwnerIndex = order.track.findIndex(
     (track) => track.owner.toString() === order.current_owner.toString()
-  );  
+  );
 
-  console.log("Current Owner:", order.current_owner); 
-console.log("Track Owners:", order.track.map(t => t.owner.toString()));
-
- 
   if (
     currentOwnerIndex === -1 ||
     currentOwnerIndex === order.track.length - 1
   ) {
-    logger.error("Current owner not found or is the last owner in the track"); 
     return createResponse(res, 400, "Invalid transaction verification", [], false);
-  } 
- 
-  logger.info("Current owner found");
+  }
 
-  logger.info("Getting the next owner in the track");
-  const nextOwner = order.track[currentOwnerIndex + 1].owner; 
-  logger.info(`Next owner is ${nextOwner}`);
+  // Ensure OTP is verified for the next transfer
+  if (
+    !order.transfer_otp?.isVerified ||
+    order.transfer_otp?.forTrackIndex !== currentOwnerIndex + 1
+  ) {
+    return createResponse(res, 400, "OTP not verified for this transaction", [], false);
+  }
 
-  logger.info("Updating the give_status of the current owner");
-  // Update the give_status of the current owner
+  const nextOwner = order.track[currentOwnerIndex + 1].owner;
+
   order.track[currentOwnerIndex].give_status = true;
+  order.track[currentOwnerIndex + 1].recieve_status = true;
+  order.current_owner = nextOwner;
 
-  logger.info("Updating the recieve_status of the next owner");
-  // Update the recieve_status of the next owner 
-  order.track[currentOwnerIndex + 1].recieve_status=true;
-  
-  logger.info("Updating the current owner of the order");
-  // Update the current owner of the order 
-  order.current_owner=nextOwner;
-  
-  await order.save(); 
-  logger.info("Transaction verified successfully");
+  // Reset OTP
+  order.transfer_otp = undefined;
 
-  logger.info("Updating the user's order entries");
-  // Update the user's order entries
+  // Save the current state before possibly deleting
+  await order.save();
 
-  logger.info("Getting the current owner and the next owner");
-      
-    const currentOwner= await User.findById(
-           order.track[currentOwnerIndex].owner
-   );  
-   
-  const nextOwnerUser = await User.findById(nextOwner); 
-  
-  logger.info("Updating the current owner's order entry");
-     const currentOwnerEntry = currentOwner.product_left_to_deliver.find(
+  const currentOwner = await User.findById(order.track[currentOwnerIndex].owner);
+  const nextOwnerUser = await User.findById(nextOwner);
+
+  const currentOwnerEntry = currentOwner.product_left_to_deliver.find(
     (entry) => entry.order.toString() === orderId.toString()
-  ); 
-
-  if (currentOwnerEntry) {
-    currentOwnerEntry.give_status = true;
-  } 
+  );
+  if (currentOwnerEntry) currentOwnerEntry.give_status = true;
   await currentOwner.save();
-  logger.info("Current owner's order entry updated");
 
-  logger.info("Updating the next owner's order entry");
   const nextOwnerEntry = nextOwnerUser.product_left_to_deliver.find(
     (entry) => entry.order.toString() === orderId.toString()
   );
-  if (nextOwnerEntry) {
-    nextOwnerEntry.recieve_status = true;
-  }
+  if (nextOwnerEntry) nextOwnerEntry.recieve_status = true;
   await nextOwnerUser.save();
-  logger.info("Next owner's order entry updated");
 
-
-  // till here done ...  
-
-  logger.info("Transaction verified and statuses updated successfully");
-
-  logger.info("Uploading new details on web3");
-  // Upload the updated track on web3
-  const track_array=order.track.map((track) => ({
-    owner: track.owner,
-    recieve_status: track.recieve_status,
-    give_status: track.give_status,
-  }));
-  const response = await uploadFile(track_array);
-  if(!response){
-    logger.error("Error in uploading track on web3");
-    return createResponse(res, 500, "Error in uploading track on web3", [], false);
-  }
-  logger.info("Track uploaded on web3");
-  const web3_id = response?.IpfsHash;
-  order.web3_id = web3_id;
-  await order.save();
-  logger.info("Track uploaded on web3 and order updated");
-
-  // Check if all users in the track have both statuses true
-  logger.info("Checking if all statuses are true");
-  const allStatusesTrue = order.track.every(
-    (track) => track.recieve_status && track.give_status
-  );
-
-  if (allStatusesTrue) {
-    order.delivery_status = "delivered";
-    
-    // Remove order from all users' product_left_to_deliver 
-     const usersInTrack = order.track.map(t => t.owner);
-    await User.updateMany(
-      { _id: { $in: usersInTrack } },
-      { $pull: { product_left_to_deliver: { order: orderId } } }
-    );
-
-    // Delete the order
+  // ✅ DELETE order if final owner (buyer) has now received the product
+  const isBuyer = currentOwnerIndex + 1 === order.track.length - 1;
+  if (isBuyer) {
     await Order.findByIdAndDelete(orderId);
-    
-    logger.info("Order removed from database as delivery is complete");
+    return createResponse(res, 200, "Product successfully delivered to buyer and order deleted", [], true);
   }
-  logger.info("Request to verifyTransaction has exited");
 
-  return createResponse(res, 200, "Transaction verified successfully", { order, web3_id }, true);
-});     
+  return createResponse(res, 200, "Transaction verified successfully", { order }, true);
+});
+ 
+
+
+  // logger.info("Uploading new details on web3");
+  // // Upload the updated track on web3
+  // const track_array=order.track.map((track) => ({
+  //   owner: track.owner,
+  //   recieve_status: track.recieve_status,
+  //   give_status: track.give_status,
+  // }));
+  // const response = await uploadFile(track_array);
+  // if(!response){
+  //   logger.error("Error in uploading track on web3");
+  //   return createResponse(res, 500, "Error in uploading track on web3", [], false);
+  // }
+  // logger.info("Track uploaded on web3");
+  // const web3_id = response?.IpfsHash;
+  // order.web3_id = web3_id;
+  // await order.save();
+  // logger.info("Track uploaded on web3 and order updated");
+
+  // // Check if all users in the track have both statuses true
+  // logger.info("Checking if all statuses are true");
+  // const allStatusesTrue = order.track.every(
+  //   (track) => track.recieve_status && track.give_status
+  // );
+
+  // if (allStatusesTrue) {
+  //   order.delivery_status = "delivered";
+    
+  //   // Remove order from all users' product_left_to_deliver 
+  //    const usersInTrack = order.track.map(t => t.owner);
+  //   await User.updateMany(
+  //     { _id: { $in: usersInTrack } },
+  //     { $pull: { product_left_to_deliver: { order: orderId } } }
+  //   );
+
+  //   // Delete the order
+  //   await Order.findByIdAndDelete(orderId);
+    
+  //   logger.info("Order removed from database as delivery is complete");
+  // }
+  // logger.info("Request to verifyTransaction has exited");
+
+  // return createResponse(res, 200, "Transaction verified successfully", { order, web3_id }, true);
+
  
 
 
@@ -582,36 +519,31 @@ const generateTransferOTP = asyncHandler(async (req, res) => {
   
   return createResponse(res, 200, "OTP generated successfully", { otp }, true);
 });  
- 
-
+  
 
 const verifyTransferOTP = asyncHandler(async (req, res) => {
-  const { orderId, otp } = req.body; 
-  const order = await Order.findById(orderId); 
-  
+  const { orderId, otp } = req.body;
+  const order = await Order.findById(orderId);
+
   if (!order?.transfer_otp?.code) {
     return createResponse(res, 400, "No OTP found for this order", [], false);
-  }  
+  }
 
   if (order.transfer_otp.code !== otp) {
     return createResponse(res, 400, "Invalid OTP", [], false);
   }
 
-  // Check if OTP is expired (15 minutes)
   const otpAge = (new Date() - order.transfer_otp.generatedAt) / 1000 / 60;
   if (otpAge > 15) {
     return createResponse(res, 400, "OTP expired", [], false);
   }
 
-  // Set OTP as verified instead of clearing it
+  // Mark the OTP as verified
   order.transfer_otp.isVerified = true;
   await order.save();
-  
+
   return createResponse(res, 200, "OTP verified successfully", { order }, true);
-});     
-
-
-
+});
 
 
 
@@ -641,11 +573,46 @@ const getOrderTransactions = asyncHandler(async (req, res) => {
 }); 
 
 
+ const takeFinalOrder = asyncHandler(async (req, res) => {
+  const { orderId } = req.body;
+  const userId = req.user._id;
+
+  const order = await Order.findById(orderId);
+  if (!order) {
+    return createResponse(res, 404, "Order not found", [], false);
+  }
+
+  // Ensure the user is the final recipient
+  const lastTrackIndex = order.track.length - 1;
+  const finalOwnerId = order.track[lastTrackIndex].owner.toString();
+
+  if (userId.toString() !== finalOwnerId) {
+    return createResponse(res, 403, "Only final receiver can take the order", [], false);
+  }
+
+  // Ensure the final owner has received the product
+  if (!order.track[lastTrackIndex].recieve_status) {
+    return createResponse(res, 400, "Product not yet marked as received", [], false);
+  }
+
+  // Remove order from buyer's product_left_to_deliver
+  const user = await User.findById(userId);
+  user.product_left_to_deliver = user.product_left_to_deliver.filter(
+    (entry) => entry.order.toString() !== orderId.toString()
+  );
+  await user.save();
+
+  // Delete the order
+  await Order.findByIdAndDelete(orderId);
+
+  return createResponse(res, 200, "Order taken and removed from system", [], true);
+});
+
 
 
 
 module.exports = { 
-  getUserRelatedOrders,
+  
   addOrder,
   addTrack,
   orders_in_queue,
@@ -657,7 +624,8 @@ module.exports = {
   generateTransferOTP,
   verifyTransferOTP,
   getOrderTransactions,
-};
+  takeFinalOrder,
+};  
  
 
 

@@ -12,11 +12,7 @@ router.post(
 ); 
 
 
-router.get('/my-orders',
-   authorize,  
 
-    require("../controllers/orderController.js").getUserRelatedOrders
-);   
  
   
 

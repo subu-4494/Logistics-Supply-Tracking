@@ -1,1 +1,1 @@
-[{"owner":"688ba4fada6c4481027a4561","recieve_status":true,"give_status":true},{"owner":"688bcdd70f0e0bee499ad597","recieve_status":true,"give_status":true},{"owner":"688baeb38fcf8ec1668d7385","recieve_status":true,"give_status":true}]
+[{"owner":"688d1b281b48f48f65da5b56","recieve_status":true,"give_status":false},{"owner":"688d1cd01b48f48f65da5ba6","recieve_status":false,"give_status":false},{"owner":"688d1c4a1b48f48f65da5b7f","recieve_status":false,"give_status":true}]

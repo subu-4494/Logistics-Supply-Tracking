@@ -24,7 +24,7 @@ function OrdersPage() {
         credentials: 'include'
       });
       const data = await response.json();
-      console.log('data: ',data);
+      //console.log('data: ',data);
       if (data.success) {
         setOrders(data.data);
         // Fetch track details for each order
@@ -61,7 +61,7 @@ function OrdersPage() {
     }
   };
 
-  const handleTake = async (orderId) => {
+   const handleTake = async (orderId) => {
     try {
       const response = await fetch('http://localhost:5002/order/verifyTransaction', {
         method: 'POST',
@@ -86,7 +86,8 @@ function OrdersPage() {
       console.error('Error taking order:', error);
       alert('Failed to take order');
     }
-  };
+  }; 
+
 
   const handleGive = async (orderId) => {
     try {
@@ -106,7 +107,7 @@ function OrdersPage() {
     } catch (error) {
       alert('Failed to initiate transfer');
     }
-  };
+  };  
 
   const handleOtpSubmit = async (orderId) => {
     try {
@@ -135,35 +136,48 @@ function OrdersPage() {
   };
 
   const canTake = (order) => {
-    const track = tracks[order.order];
-    if (!track) return false;
+  const track = tracks[order.order];
+  if (!track) return false;
 
-    switch(user.category) {
-      case 'Seller':
-        return !order.recieve_status && track[0].owner === user._id;
-      case 'Middleman':
-        const userTrackIndex = track.findIndex(t => t.owner === user._id);
-        const previousTrack = track[userTrackIndex - 1];
-        return previousTrack?.give_status && !order.recieve_status;
-      case 'Buyer':
-        return !order.recieve_status && track[track.length - 1].owner === user._id;
-      default:
-        return false;
-    }
-  };
+  const userTrackIndex = track.findIndex(t => t.owner === user._id);
+  const previousTrack = track[userTrackIndex - 1];
+
+  // If there's an OTP generated for this track, enforce verification
+  const isOTPRequired = order.transfer_otp?.forTrackIndex === userTrackIndex;
+
+  switch(user.category) {
+    case 'Seller':
+      return !order.recieve_status && track[0].owner === user._id;
+
+    case 'Middleman':
+      return previousTrack?.give_status && !track[userTrackIndex].recieve_status && !isOTPRequired;
+
+    case 'Buyer':
+      return previousTrack?.give_status && !track[userTrackIndex].recieve_status && !isOTPRequired;
+
+    default:
+      return false;
+  }
+};
 
   const canGive = (order, role) => {
-    switch (role) {
-      case 'Seller':
-        return !order.give_status;
-      case 'Middleman':
-        return order.recieve_status && !order.give_status;
-      case 'Buyer':
-        return false;
-      default:
-        return false;
-    }
-  };
+  const track = tracks[order.order];
+  if (!track) return false;
+
+  const userTrackIndex = track.findIndex(t => t.owner === user._id);
+  const currentTrack = track[userTrackIndex];
+
+  switch (role) {
+    case 'Seller':
+    case 'Middleman':
+      return currentTrack?.recieve_status && !currentTrack?.give_status;
+    case 'Buyer':
+      return false; // Buyer is final recipient
+    default:
+      return false;
+  }
+};
+
 
   useEffect(() => {
     fetchOrders();
