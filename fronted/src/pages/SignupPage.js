@@ -32,8 +32,9 @@ function SignupPage() {
       const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify(formData)
-      });
+      }); 
       const data = await response.json();
       
       if (data.success) {

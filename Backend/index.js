@@ -24,4 +24,4 @@ app.use("/", require("./route"));
 
 app.listen(port, () => {
   logger.info(`Server running on http://localhost:${port}`);
-});
+}); 
