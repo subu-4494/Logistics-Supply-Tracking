@@ -21466,3 +21466,62 @@
 2025-08-05T17:20:30.624Z info: Request to authMiddleware.authorize has entered
 2025-08-05T17:20:30.625Z info: cookies: {}
 2025-08-05T17:20:30.626Z info: GET /order/orders_to_deliver 401 1.589 ms
+2025-08-05T19:48:52.920Z info: Request to authRoutes has entered
+2025-08-05T19:48:52.925Z info: Request to authRoutes has exited
+2025-08-05T19:48:53.132Z info: Request to productRoutes.js has entered
+2025-08-05T19:48:53.133Z info: Request to productRoutes.js has exited
+2025-08-05T19:48:53.134Z info: Request to orderRoutes.js has entered
+2025-08-05T19:48:53.142Z info: Request to orderRoutes.js has exited
+2025-08-05T19:48:53.146Z info: Server running on http://localhost:5002
+2025-08-05T19:48:55.445Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-08-05T19:51:20.914Z info: Request to authRoutes has entered
+2025-08-05T19:51:20.916Z info: Request to authRoutes has exited
+2025-08-05T19:51:21.018Z info: Request to productRoutes.js has entered
+2025-08-05T19:51:21.019Z info: Request to productRoutes.js has exited
+2025-08-05T19:51:21.020Z info: Request to orderRoutes.js has entered
+2025-08-05T19:51:21.023Z info: Request to orderRoutes.js has exited
+2025-08-05T19:51:21.025Z info: Server running on http://localhost:5003
+2025-08-05T19:51:24.745Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-08-05T19:52:10.742Z info: Request to authRoutes has entered
+2025-08-05T19:52:10.744Z info: Request to authRoutes has exited
+2025-08-05T19:52:10.892Z info: Request to productRoutes.js has entered
+2025-08-05T19:52:10.893Z info: Request to productRoutes.js has exited
+2025-08-05T19:52:10.894Z info: Request to orderRoutes.js has entered
+2025-08-05T19:52:10.900Z info: Request to orderRoutes.js has exited
+2025-08-05T19:52:10.905Z info: Server running on http://localhost:5003
+2025-08-05T19:52:12.670Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-08-05T19:53:09.641Z info: Request to authRoutes has entered
+2025-08-05T19:53:09.643Z info: Request to authRoutes has exited
+2025-08-05T19:53:09.762Z info: Request to productRoutes.js has entered
+2025-08-05T19:53:09.763Z info: Request to productRoutes.js has exited
+2025-08-05T19:53:09.764Z info: Request to orderRoutes.js has entered
+2025-08-05T19:53:09.768Z info: Request to orderRoutes.js has exited
+2025-08-05T19:53:09.773Z info: Server running on http://localhost:5003
+2025-08-05T19:53:11.857Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-08-05T19:54:28.539Z info: Request to authRoutes has entered
+2025-08-05T19:54:28.541Z info: Request to authRoutes has exited
+2025-08-05T19:54:28.646Z info: Request to productRoutes.js has entered
+2025-08-05T19:54:28.647Z info: Request to productRoutes.js has exited
+2025-08-05T19:54:28.648Z info: Request to orderRoutes.js has entered
+2025-08-05T19:54:28.652Z info: Request to orderRoutes.js has exited
+2025-08-05T19:54:28.655Z info: Server running on http://localhost:5004
+2025-08-05T19:54:32.239Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-08-05T19:59:10.706Z info: Request to authMiddleware.authorize has entered
+2025-08-05T19:59:10.714Z info: cookies: {}
+2025-08-05T19:59:10.731Z info: GET /auth/profile 401 25.738 ms
+2025-08-05T19:59:10.734Z info: Request to authMiddleware.authorize has entered
+2025-08-05T19:59:10.734Z info: cookies: {}
+2025-08-05T19:59:10.735Z info: GET /auth/profile 401 0.854 ms
+2025-08-05T19:59:20.862Z info: Request to authMiddleware.authorize has entered
+2025-08-05T19:59:20.863Z info: cookies: {}
+2025-08-05T19:59:20.864Z info: GET /auth/profile 401 1.594 ms
+2025-08-05T19:59:20.884Z info: Request to authMiddleware.authorize has entered
+2025-08-05T19:59:20.884Z info: cookies: {}
+2025-08-05T19:59:20.886Z info: GET /auth/profile 401 1.038 ms
+2025-08-05T19:59:23.976Z info: Request to authMiddleware.authorize has entered
+2025-08-05T19:59:23.977Z info: cookies: {}
+2025-08-05T19:59:23.978Z info: GET /auth/profile 401 1.466 ms
+2025-08-05T19:59:23.982Z info: Request to authMiddleware.authorize has entered
+2025-08-05T19:59:23.983Z info: cookies: {}
+2025-08-05T19:59:23.985Z info: GET /auth/profile 401 1.511 ms
+2025-08-05T19:59:44.564Z info: POST /auth/signup 201 1071.696 ms

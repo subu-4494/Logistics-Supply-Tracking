@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch('http://localhost:5002/auth/profile', {
+      const response = await fetch('http://localhost:5004/auth/profile', {
         credentials: 'include'
       }); 
       const data = await response.json();

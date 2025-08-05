@@ -44,7 +44,7 @@ function AddProductPage() {
         productFormData.append('image', image);
       }
 
-      const response = await fetch('http://localhost:5002/product/addProduct', {
+      const response = await fetch('http://localhost:5004/product/addProduct', {
         method: 'POST',
         credentials: 'include',
         body: productFormData

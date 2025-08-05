@@ -20,7 +20,7 @@ function OrdersPage() {
   const fetchOrders = async () => {
     try {
         console.log('going to fetch orders');
-      const response = await fetch('http://localhost:5002/order/orders_to_deliver', {
+      const response = await fetch('http://localhost:5004/order/orders_to_deliver', {
         credentials: 'include'
       });
       const data = await response.json();
@@ -41,7 +41,7 @@ function OrdersPage() {
 
   const fetchTrackDetails = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:5002/order/getTrack', {
+      const response = await fetch('http://localhost:5004/order/getTrack', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ function OrdersPage() {
 
    const handleTake = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:5002/order/verifyTransaction', {
+      const response = await fetch('http://localhost:5004/order/verifyTransaction', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ function OrdersPage() {
 
   const handleGive = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:5002/order/generateTransferOTP', {
+      const response = await fetch('http://localhost:5004/order/generateTransferOTP', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -111,7 +111,7 @@ function OrdersPage() {
 
   const handleOtpSubmit = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:5002/order/verifyTransferOTP', {
+      const response = await fetch('http://localhost:5004/order/verifyTransferOTP', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',

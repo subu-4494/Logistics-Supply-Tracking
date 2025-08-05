@@ -14,7 +14,7 @@ function ProductsPage() {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5002/product/getProducts', {
+      const response = await fetch('http://localhost:5004/product/getProducts', {
         credentials: 'include'
       });
       const data = await response.json();
@@ -35,7 +35,7 @@ function ProductsPage() {
   const handleBuyProduct = async (productId) => {
     try {
       setOrderStatus({ loading: true, error: null });
-      const response = await fetch('http://localhost:5002/order/addOrder', {
+      const response = await fetch('http://localhost:5004/order/addOrder', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
