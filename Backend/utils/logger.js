@@ -24,4 +24,4 @@ const requestsLogger = morgan(":method :url :status :response-time ms", {
   }
 });
 
-module.exports = { logger, requestsLogger };
+module.exports = { logger, requestsLogger }; 

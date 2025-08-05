@@ -3,7 +3,7 @@ const Product = require("../models/Product");
 const User = require("../models/User");
 const asyncHandler = require("../utils/AsyncHandling");
 const { logger } = require("../utils/logger");
-const { downloadFile, uploadFile } = require("../utils/PinataHandling");
+//const { downloadFile, uploadFile } = require("../utils/PinataHandling");
 const { createResponse } = require("../utils/ResponseHandling"); 
 
 
@@ -323,7 +323,7 @@ const verifyTransaction = asyncHandler(async (req, res) => {
     order.transfer_otp?.forTrackIndex !== currentOwnerIndex + 1
   ) {
     return createResponse(res, 400, "OTP not verified for this transaction", [], false);
-  }
+  } 
 
   const nextOwner = order.track[currentOwnerIndex + 1].owner;
 
@@ -573,43 +573,6 @@ const getOrderTransactions = asyncHandler(async (req, res) => {
 }); 
 
 
- const takeFinalOrder = asyncHandler(async (req, res) => {
-  const { orderId } = req.body;
-  const userId = req.user._id;
-
-  const order = await Order.findById(orderId);
-  if (!order) {
-    return createResponse(res, 404, "Order not found", [], false);
-  }
-
-  // Ensure the user is the final recipient
-  const lastTrackIndex = order.track.length - 1;
-  const finalOwnerId = order.track[lastTrackIndex].owner.toString();
-
-  if (userId.toString() !== finalOwnerId) {
-    return createResponse(res, 403, "Only final receiver can take the order", [], false);
-  }
-
-  // Ensure the final owner has received the product
-  if (!order.track[lastTrackIndex].recieve_status) {
-    return createResponse(res, 400, "Product not yet marked as received", [], false);
-  }
-
-  // Remove order from buyer's product_left_to_deliver
-  const user = await User.findById(userId);
-  user.product_left_to_deliver = user.product_left_to_deliver.filter(
-    (entry) => entry.order.toString() !== orderId.toString()
-  );
-  await user.save();
-
-  // Delete the order
-  await Order.findByIdAndDelete(orderId);
-
-  return createResponse(res, 200, "Order taken and removed from system", [], true);
-});
-
-
-
 
 module.exports = { 
   
@@ -624,8 +587,7 @@ module.exports = {
   generateTransferOTP,
   verifyTransferOTP,
   getOrderTransactions,
-  takeFinalOrder,
-};  
+};   
  
 
 
