@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/AddProductPage.css';
- 
 
 function AddProductPage() { 
   const navigate = useNavigate();
@@ -44,7 +43,7 @@ function AddProductPage() {
         productFormData.append('image', image);
       }
 
-      const response = await fetch('http://localhost:5004/product/addProduct', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/product/addProduct`, {
         method: 'POST',
         credentials: 'include',
         body: productFormData

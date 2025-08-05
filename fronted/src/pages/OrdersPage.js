@@ -19,15 +19,12 @@ function OrdersPage() {
 
   const fetchOrders = async () => {
     try {
-        console.log('going to fetch orders');
-      const response = await fetch('http://localhost:5004/order/orders_to_deliver', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/orders_to_deliver`, {
         credentials: 'include'
       });
       const data = await response.json();
-      //console.log('data: ',data);
       if (data.success) {
         setOrders(data.data);
-        // Fetch track details for each order
         data.data.forEach(order => fetchTrackDetails(order.order));
       } else {
         setError(data.message);
@@ -41,7 +38,7 @@ function OrdersPage() {
 
   const fetchTrackDetails = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:5004/order/getTrack', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/getTrack`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -61,9 +58,9 @@ function OrdersPage() {
     }
   };
 
-   const handleTake = async (orderId) => {
+  const handleTake = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:5004/order/verifyTransaction', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/verifyTransaction`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,20 +75,18 @@ function OrdersPage() {
       const data = await response.json();
       if (data.success) {
         alert('Order taken successfully!');
-        fetchOrders(); // Refresh orders
+        fetchOrders();
       } else {
         alert(data.message || 'Failed to take order');
       }
     } catch (error) {
-      console.error('Error taking order:', error);
       alert('Failed to take order');
     }
-  }; 
-
+  };
 
   const handleGive = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:5004/order/generateTransferOTP', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/generateTransferOTP`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -99,19 +94,18 @@ function OrdersPage() {
       });
 
       const data = await response.json();
-      console.log('otp generation response: ',data);
       if (data.success) {
         setShowOtpInput(true);
-        fetchOrders(); // Refresh to show OTP to next person
+        fetchOrders();
       }
     } catch (error) {
       alert('Failed to initiate transfer');
     }
-  };  
+  };
 
   const handleOtpSubmit = async (orderId) => {
     try {
-      const response = await fetch('http://localhost:5004/order/verifyTransferOTP', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/verifyTransferOTP`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -136,48 +130,44 @@ function OrdersPage() {
   };
 
   const canTake = (order) => {
-  const track = tracks[order.order];
-  if (!track) return false;
+    const track = tracks[order.order];
+    if (!track) return false;
 
-  const userTrackIndex = track.findIndex(t => t.owner === user._id);
-  const previousTrack = track[userTrackIndex - 1];
+    const userTrackIndex = track.findIndex(t => t.owner === user._id);
+    const previousTrack = track[userTrackIndex - 1];
 
-  // If there's an OTP generated for this track, enforce verification
-  const isOTPRequired = order.transfer_otp?.forTrackIndex === userTrackIndex;
+    const isOTPRequired = order.transfer_otp?.forTrackIndex === userTrackIndex;
 
-  switch(user.category) {
-    case 'Seller':
-      return !order.recieve_status && track[0].owner === user._id;
+    switch (user.category) {
+      case 'Seller':
+        return !order.recieve_status && track[0].owner === user._id;
 
-    case 'Middleman':
-      return previousTrack?.give_status && !track[userTrackIndex].recieve_status && !isOTPRequired;
+      case 'Middleman':
+      case 'Buyer':
+        return previousTrack?.give_status && !track[userTrackIndex].recieve_status && !isOTPRequired;
 
-    case 'Buyer':
-      return previousTrack?.give_status && !track[userTrackIndex].recieve_status && !isOTPRequired;
-
-    default:
-      return false;
-  }
-};
+      default:
+        return false;
+    }
+  };
 
   const canGive = (order, role) => {
-  const track = tracks[order.order];
-  if (!track) return false;
+    const track = tracks[order.order];
+    if (!track) return false;
 
-  const userTrackIndex = track.findIndex(t => t.owner === user._id);
-  const currentTrack = track[userTrackIndex];
+    const userTrackIndex = track.findIndex(t => t.owner === user._id);
+    const currentTrack = track[userTrackIndex];
 
-  switch (role) {
-    case 'Seller':
-    case 'Middleman':
-      return currentTrack?.recieve_status && !currentTrack?.give_status;
-    case 'Buyer':
-      return false; // Buyer is final recipient
-    default:
-      return false;
-  }
-};
-
+    switch (role) {
+      case 'Seller':
+      case 'Middleman':
+        return currentTrack?.recieve_status && !currentTrack?.give_status;
+      case 'Buyer':
+        return false;
+      default:
+        return false;
+    }
+  };
 
   useEffect(() => {
     fetchOrders();
@@ -193,11 +183,10 @@ function OrdersPage() {
         {orders.map(order => {
           const track = tracks[order.order];
           const currentTrack = track?.find(t => t.owner === user._id);
-          
+
           return (
             <div key={order.order} className="order-card">
               <h3>Order #{order.order.slice(-6)}</h3>
-              
               <div className="status-section">
                 <p>Receive Status: {order.recieve_status ? '✅' : '❌'}</p>
                 <p>Give Status: {order.give_status ? '✅' : '❌'}</p>
@@ -213,13 +202,11 @@ function OrdersPage() {
                       <p>Give: {t.give_status ? '✅' : '❌'}</p>
                     </div>
                   ))}
-                  {/* Show OTP if it exists and not expired */}
-                  {order.transfer_otp && currentTrack && !currentTrack.recieve_status && console.log('satisfied')&& (
+                  {order.transfer_otp && currentTrack && !currentTrack.recieve_status && (
                     <div className="otp-info">
                       <p>Transfer OTP: {order.transfer_otp.code}</p>
                       <p className="otp-expiry">
-                        Valid until: {new Date(order.transfer_otp.generatedAt).toLocaleTimeString()}
-                        (15 min)
+                        Valid until: {new Date(order.transfer_otp.generatedAt).toLocaleTimeString()} (15 min)
                       </p>
                     </div>
                   )}
@@ -228,18 +215,12 @@ function OrdersPage() {
 
               <div className="action-buttons">
                 {canTake(order) && (
-                  <button 
-                    className="take-button"
-                    onClick={() => handleTake(order.order)}
-                  >
+                  <button className="take-button" onClick={() => handleTake(order.order)}>
                     Take
                   </button>
                 )}
                 {canGive(order, user.category) && (
-                  <button 
-                    className="give-button"
-                    onClick={() => handleGive(order.order)}
-                  >
+                  <button className="give-button" onClick={() => handleGive(order.order)}>
                     Give
                   </button>
                 )}
@@ -252,4 +233,4 @@ function OrdersPage() {
   );
 }
 
-export default OrdersPage; 
+export default OrdersPage;

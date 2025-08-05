@@ -8,7 +8,7 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost:5004/auth/logout', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/logout`, {
         credentials: 'include'
       });
       await checkAuth();
@@ -60,4 +60,4 @@ function Navbar() {
   );
 }
 
-export default Navbar; 
+export default Navbar;

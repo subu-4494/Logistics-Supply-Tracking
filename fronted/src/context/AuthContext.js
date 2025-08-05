@@ -9,12 +9,12 @@ export const AuthProvider = ({ children }) => {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch('http://localhost:5004/auth/profile', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/profile`, {
         credentials: 'include'
-      }); 
+      });
       const data = await response.json();
-      
-      if (data&&data.data&&data.data.user) {
+
+      if (data && data.data && data.data.user) {
         setUser(data.data.user);
         setIsAuthenticated(true);
       }
@@ -37,6 +37,4 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export const useAuth = () => useContext(AuthContext);   
-
-
+export const useAuth = () => useContext(AuthContext);

@@ -17,9 +17,9 @@ function DeliveryDashboard() {
     fetchMiddlemen();
   }, []);
 
-   const fetchOrderDetails = async (orderId) => {
+  const fetchOrderDetails = async (orderId) => {
     try {
-      const response = await fetch(`http://localhost:5004/order/${orderId}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/${orderId}`, {
         credentials: 'include'
       });
       const data = await response.json();
@@ -36,16 +36,12 @@ function DeliveryDashboard() {
 
   const fetchQueuedOrders = async () => {
     try {
-      const response = await fetch('http://localhost:5004/order/orders_in_queue', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/orders_in_queue`, {
         credentials: 'include'
       });
       const data = await response.json();
       if (data.success) {
         setQueuedOrders(data.data);
-        console.log(data.data);
-        console.log(queuedOrders);
-        // Fetch details for each order
-        // data.data.forEach(orderId => fetchOrderDetails(orderId));
       } else {
         setError(data.message);
       }
@@ -56,11 +52,10 @@ function DeliveryDashboard() {
 
   const fetchMiddlemen = async () => {
     try {
-      const response = await fetch('http://localhost:5004/order/getMiddlemen', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/getMiddlemen`, {
         credentials: 'include'
       });
       const data = await response.json();
-      console.log(data.data);
       if (data.success) {
         setMiddlemen(data.data);
       }
@@ -87,7 +82,7 @@ function DeliveryDashboard() {
     }
 
     try {
-      const response = await fetch('http://localhost:5004/order/addTrack', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/addTrack`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -119,28 +114,19 @@ function DeliveryDashboard() {
   return (
     <div className="delivery-dashboard">
       <h2>Delivery Admin Dashboard</h2>
-      
+
       <div className="orders-section">
         <h3>Orders in Queue</h3>
         <div className="orders-grid">
-          {queuedOrders.map(orderId => {
-            // const order = orderDetails[orderId];
-            // if (!order) return null;
-            
-            return (
-              <div 
-                key={orderId} 
-                className={`order-card ${selectedOrder === orderId ? 'selected' : ''}`}
-                onClick={() => setSelectedOrder(orderId)}
-              >
-                <h4>Order #{orderId}</h4>
-                {/* <p>Product: {order.product?.name || 'Loading...'}</p>
-                <p>Quantity: {order.quantity || 'Loading...'}</p>
-                <p>Buyer: {order.buyer?.name || 'Loading...'}</p>
-                <p>Seller: {order.seller?.name || 'Loading...'}</p> */}
-              </div>
-            );
-          })}
+          {queuedOrders.map(orderId => (
+            <div 
+              key={orderId} 
+              className={`order-card ${selectedOrder === orderId ? 'selected' : ''}`}
+              onClick={() => setSelectedOrder(orderId)}
+            >
+              <h4>Order #{orderId}</h4>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -172,5 +158,4 @@ function DeliveryDashboard() {
   );
 }
 
-export default DeliveryDashboard; 
-
+export default DeliveryDashboard;

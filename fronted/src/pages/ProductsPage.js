@@ -10,11 +10,10 @@ function ProductsPage() {
   const [error, setError] = useState(null);
   const [orderStatus, setOrderStatus] = useState({ loading: false, error: null }); 
 
-  // ✅ Moved this function before handleBuyProduct
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5004/product/getProducts', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/product/getProducts`, {
         credentials: 'include'
       });
       const data = await response.json();
@@ -31,11 +30,10 @@ function ProductsPage() {
     }
   };
 
-  // ✅ This now correctly accesses fetchProducts
   const handleBuyProduct = async (productId) => {
     try {
       setOrderStatus({ loading: true, error: null });
-      const response = await fetch('http://localhost:5004/order/addOrder', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/order/addOrder`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -50,7 +48,7 @@ function ProductsPage() {
       const data = await response.json();
       if (data.success) {
         alert('Order placed successfully!');
-        fetchProducts(); // ✅ No more error here
+        fetchProducts();
       } else {
         setOrderStatus({ loading: false, error: data.message });
       }
