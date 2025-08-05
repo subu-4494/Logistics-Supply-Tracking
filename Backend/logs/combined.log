@@ -21533,3 +21533,39 @@
 2025-08-05T20:16:14.858Z info: Request to orderRoutes.js has exited
 2025-08-05T20:16:14.864Z info: Server running on http://localhost:5004
 2025-08-05T20:16:18.049Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-08-05T20:36:27.952Z info: Request to authRoutes has entered
+2025-08-05T20:36:27.953Z info: Request to authRoutes has exited
+2025-08-05T20:36:28.159Z info: Request to productRoutes.js has entered
+2025-08-05T20:36:28.160Z info: Request to productRoutes.js has exited
+2025-08-05T20:36:28.161Z info: Request to orderRoutes.js has entered
+2025-08-05T20:36:28.166Z info: Request to orderRoutes.js has exited
+2025-08-05T20:36:28.172Z info: Server running on http://localhost:5004
+2025-08-05T20:36:31.494Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
+2025-08-05T20:36:57.216Z info: Request to authMiddleware.authorize has entered
+2025-08-05T20:36:57.218Z info: cookies: {}
+2025-08-05T20:36:57.228Z info: GET /auth/profile 401 6.747 ms
+2025-08-05T20:36:57.231Z info: Request to authMiddleware.authorize has entered
+2025-08-05T20:36:57.232Z info: cookies: {}
+2025-08-05T20:36:57.233Z info: GET /auth/profile 401 1.715 ms
+2025-08-05T20:42:30.416Z info: Request to authMiddleware.authorize has entered
+2025-08-05T20:42:30.416Z info: cookies: {}
+2025-08-05T20:42:30.418Z info: GET /auth/profile 401 1.780 ms
+2025-08-05T20:42:30.423Z info: Request to authMiddleware.authorize has entered
+2025-08-05T20:42:30.424Z info: cookies: {}
+2025-08-05T20:42:30.427Z info: GET /auth/profile 401 2.395 ms
+2025-08-05T21:32:00.584Z info: Request to authRoutes has entered
+2025-08-05T21:32:00.587Z info: Request to authRoutes has exited
+2025-08-05T21:32:00.749Z info: Request to productRoutes.js has entered
+2025-08-05T21:32:00.750Z info: Request to productRoutes.js has exited
+2025-08-05T21:32:00.751Z info: Request to orderRoutes.js has entered
+2025-08-05T21:32:00.754Z info: Request to orderRoutes.js has exited
+2025-08-05T21:32:00.756Z info: Server running on http://localhost:5004
+2025-08-05T21:32:03.330Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
+2025-08-05T21:46:08.268Z info: Request to authRoutes has entered
+2025-08-05T21:46:08.275Z info: Request to authRoutes has exited
+2025-08-05T21:46:08.446Z info: Request to productRoutes.js has entered
+2025-08-05T21:46:08.447Z info: Request to productRoutes.js has exited
+2025-08-05T21:46:08.447Z info: Request to orderRoutes.js has entered
+2025-08-05T21:46:08.451Z info: Request to orderRoutes.js has exited
+2025-08-05T21:46:08.457Z info: Server running on http://localhost:5004
+2025-08-05T21:46:10.849Z info: MongoDB Connected: ac-msykbrh-shard-00-01.fulldyg.mongodb.net
