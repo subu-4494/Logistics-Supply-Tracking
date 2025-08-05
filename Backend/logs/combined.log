@@ -21525,3 +21525,11 @@
 2025-08-05T19:59:23.983Z info: cookies: {}
 2025-08-05T19:59:23.985Z info: GET /auth/profile 401 1.511 ms
 2025-08-05T19:59:44.564Z info: POST /auth/signup 201 1071.696 ms
+2025-08-05T20:16:14.675Z info: Request to authRoutes has entered
+2025-08-05T20:16:14.677Z info: Request to authRoutes has exited
+2025-08-05T20:16:14.852Z info: Request to productRoutes.js has entered
+2025-08-05T20:16:14.853Z info: Request to productRoutes.js has exited
+2025-08-05T20:16:14.854Z info: Request to orderRoutes.js has entered
+2025-08-05T20:16:14.858Z info: Request to orderRoutes.js has exited
+2025-08-05T20:16:14.864Z info: Server running on http://localhost:5004
+2025-08-05T20:16:18.049Z info: MongoDB Connected: ac-msykbrh-shard-00-00.fulldyg.mongodb.net
